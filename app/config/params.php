@@ -11,9 +11,20 @@
       6 => 'active',
       7 => '',
     ],
+<<<<<<< HEAD
+    'status'     => [
+      1 => 'Pending CIA',
+      2 => 'OK',
+      3 => 'GE Pending',
+    ],
+    'weight'     => [
+      'bold'   => 'Bold',
+      'normal' => 'Normal',
+=======
     'status' => [
       1 => 'Pending CIA',
       2 => 'OK',
       3 => 'GE Pending',
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     ]
   ];

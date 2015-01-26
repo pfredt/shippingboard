@@ -4,16 +4,25 @@
 
   use Yii;
   use app\models\TrailerLoad;
+<<<<<<< HEAD
+  use app\components\BasicController;
+  use yii\web\NotFoundHttpException;
+=======
   use yii\data\ActiveDataProvider;
   use yii\web\Controller;
   use yii\web\NotFoundHttpException;
   use yii\filters\VerbFilter;
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
   use yii\filters\AccessControl;
 
   /**
    * LoadController implements the CRUD actions for TrailerLoad model.
    */
+<<<<<<< HEAD
+  class LoadController extends BasicController {
+=======
   class LoadController extends Controller {
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     public function behaviors() {
       return [
         'access' => [

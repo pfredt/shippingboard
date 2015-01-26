@@ -20,10 +20,17 @@
   ]); ?>
 
   <?php
+<<<<<<< HEAD
+    $spas_models = app\models\HotTubModels::find()->all();
+    $items_for_spas = yii\helpers\ArrayHelper::map($spas_models, 'hot_tub_model_id', 'hot_tub_model_name');
+
+    $swim_spas_models = app\models\SwimSpaModels::find()->all();
+=======
     $spas_models = app\models\HotTubModels::find()->orderBy('hot_tub_model_name asc')->all();
     $items_for_spas = yii\helpers\ArrayHelper::map($spas_models, 'hot_tub_model_id', 'hot_tub_model_name');
 
     $swim_spas_models = app\models\SwimSpaModels::find()->orderBy('swim_spa_model_name asc')->all();
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     $items_for_swim_spas = yii\helpers\ArrayHelper::map($swim_spas_models, 'swim_spa_model_id', 'swim_spa_model_name');
 
     if (!$model->isNewRecord) {

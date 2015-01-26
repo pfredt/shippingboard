@@ -39,6 +39,16 @@
         'showScriptName'      => FALSE,
         'enableStrictParsing' => TRUE,
         'rules'               => [
+<<<<<<< HEAD
+          'new-load'       => 'load/create',
+          'edit-load'      => 'load/update',
+          'delete-load'    => 'load/delete',
+          'config' => 'site/config',
+          'get-new-loads'  => 'load/get',
+          'login'          => 'site/login',
+          'logout'         => 'site/logout',
+          ''               => 'site/index',
+=======
           'new-load'      => 'load/create',
           'edit-load'     => 'load/update',
           'delete-load'   => 'load/delete',
@@ -46,6 +56,7 @@
           'login'         => 'site/login',
           'logout'        => 'site/logout',
           ''              => 'site/index',
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
         ],
       ],
 

@@ -2,14 +2,26 @@
 
   namespace app\controllers;
 
+<<<<<<< HEAD
+  use app\models\Config;
+  use Yii;
+  use yii\filters\AccessControl;
+  use app\components\BasicController;
+=======
   use Yii;
   use yii\filters\AccessControl;
   use yii\web\Controller;
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
   use yii\filters\VerbFilter;
   use app\models\LoginForm;
   use app\models\TrailerLoad;
 
+<<<<<<< HEAD
+
+  class SiteController extends BasicController {
+=======
   class SiteController extends Controller {
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     public function behaviors() {
       return [
         'access' => [
@@ -34,6 +46,11 @@
 
     public function actions() {
       return [
+<<<<<<< HEAD
+        'error' => [
+          'class' => 'yii\web\ErrorAction',
+        ],
+=======
         'error'   => [
           'class' => 'yii\web\ErrorAction',
         ],
@@ -41,6 +58,7 @@
           'class'           => 'yii\captcha\CaptchaAction',
           'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : NULL,
         ],
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
       ];
     }
 
@@ -85,4 +103,22 @@
     public function actionAbout() {
       return $this->render('about');
     }
+<<<<<<< HEAD
+
+    public function actionConfig() {
+      $config = Config::find()->all();
+
+      if ($config)
+        foreach ($config as $item) {
+          if (Yii::$app->request->post("Config")['id'] == $item->id) {
+            if ($item->load(Yii::$app->request->post()) && $item->save()) {
+              return $this->refresh();
+            }
+          }
+        }
+
+      return $this->render("config", ['items' => $config]);
+    }
+=======
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
   }

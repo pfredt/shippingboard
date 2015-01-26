@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+2015-01-26 16:17:46 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/config' in D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('config', Array)
+#1 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/config', Array)
+#2 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\Dropbox\Work\domains\sps.local\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: site/config' in D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Dropbox\Work\domains\sps.local\index.php(12): yii\base\Application->run()
+#2 {main}
+2015-01-26 16:17:46 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '1426035fefc1b22418c51254b6b9e783a5b6b7eef17eb291b3f40721799d0873s:32:\"D2MzSuOdlEmGNhVld132ykRQ8muI5yS_\";'
+    'PHPSESSID' => '2890b25su4qt3edh506npga891'
+=======
 2015-01-04 20:26:31 [127.0.0.1][1][pq15lef1bt6vs3cdcn89745897][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?>'' in D:\Dropbox\Work\domains\spas.local\app\views\load\_form.php:58
 Stack trace:
 #0 D:\Dropbox\Work\domains\spas.local\app\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
@@ -101,6 +119,7 @@ Stack trace:
 2015-01-04 20:50:55 [127.0.0.1][1][-][info][application] $_COOKIE = [
     '_csrf' => 'e9b006c1b1cacc9850261db40e2da050fb6530ff4d07bd676cb8dc9a398e5a9es:32:\"D5OdmDCIX5evFfzPQ_J1xzkpDY8zZE1j\";'
     'PHPSESSID' => 'pq15lef1bt6vs3cdcn89745897'
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     '_identity' => 'e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s:23:\"[\"1\",\"authKey\",2592000]\";'
 ]
 
@@ -111,6 +130,16 @@ $_SESSION = [
 
 $_SERVER = [
     'REDIRECT_STATUS' => '200'
+<<<<<<< HEAD
+    'HTTP_HOST' => 'sps.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36'
+    'HTTP_REFERER' => 'http://sps.local/new-load'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1426035fefc1b22418c51254b6b9e783a5b6b7eef17eb291b3f40721799d0873s%3A32%3A%22D2MzSuOdlEmGNhVld132ykRQ8muI5yS_%22%3B; PHPSESSID=2890b25su4qt3edh506npga891; _identity=e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s%3A23%3A%22%5B%221%22%2C%22authKey%22%2C2592000%5D%22%3B'
+=======
     'HTTP_HOST' => 'spas.local'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_PRAGMA' => 'no-cache'
@@ -121,6 +150,7 @@ $_SERVER = [
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
     'HTTP_COOKIE' => '_csrf=e9b006c1b1cacc9850261db40e2da050fb6530ff4d07bd676cb8dc9a398e5a9es%3A32%3A%22D5OdmDCIX5evFfzPQ_J1xzkpDY8zZE1j%22%3B; PHPSESSID=pq15lef1bt6vs3cdcn89745897; _identity=e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s%3A23%3A%22%5B%221%22%2C%22authKey%22%2C2592000%5D%22%3B'
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     'PATH' => 'D:\\server\\modules\\php\\PHP-5.5.4\\ext;D:\\server\\modules\\imagemagick;D:\\server\\modules\\php\\PHP-5.5.4;D:\\server\\modules\\database\\MySQL-5.1.71\\bin;D:\\server\\modules\\http\\Apache-2.4.6\\bin;D:\\server\\modules\\http\\Apache-2.4.6;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
@@ -128,6 +158,20 @@ $_SERVER = [
     'WINDIR' => 'C:\\Windows'
     'SERVER_SIGNATURE' => ''
     'SERVER_SOFTWARE' => 'Apache'
+<<<<<<< HEAD
+    'SERVER_NAME' => 'sps.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/sps.local'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/sps.local'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/Dropbox/Work/domains/sps.local/index.php'
+    'REMOTE_PORT' => '60683'
+    'REDIRECT_URL' => '/config'
+=======
     'SERVER_NAME' => 'spas.local'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -140,10 +184,45 @@ $_SERVER = [
     'SCRIPT_FILENAME' => 'D:/Dropbox/Work/domains/spas.local/index.php'
     'REMOTE_PORT' => '60037'
     'REDIRECT_URL' => '/new-load'
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
+<<<<<<< HEAD
+    'REQUEST_URI' => '/config'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/config'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\config'
+    'PHP_SELF' => '/index.php/config'
+    'REQUEST_TIME_FLOAT' => 1422274666.254
+    'REQUEST_TIME' => 1422274666
+    'argv' => []
+    'argc' => 0
+]
+2015-01-26 18:14:15 [127.0.0.1][1][2890b25su4qt3edh506npga891][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Using $this when not in object context' in D:\Dropbox\Work\domains\sps.local\app\views\common\table.php:5
+Stack trace:
+#0 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#1 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#2 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#3 D:\Dropbox\Work\domains\sps.local\app\views\site\index.php(14): yii\base\View->render()
+#4 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#5 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#6 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#7 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#8 D:\Dropbox\Work\domains\sps.local\app\controllers\SiteController.php(59): yii\base\Controller->render()
+#9 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionIndex()
+#10 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#11 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#12 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#13 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#14 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#15 D:\Dropbox\Work\domains\sps.local\index.php(12): yii\base\Application->run()
+#16 {main}
+2015-01-26 18:14:14 [127.0.0.1][1][2890b25su4qt3edh506npga891][info][application] $_COOKIE = [
+    '_csrf' => '1426035fefc1b22418c51254b6b9e783a5b6b7eef17eb291b3f40721799d0873s:32:\"D2MzSuOdlEmGNhVld132ykRQ8muI5yS_\";'
+    'PHPSESSID' => '2890b25su4qt3edh506npga891'
+=======
     'REQUEST_URI' => '/new-load'
     'SCRIPT_NAME' => '/index.php'
     'PATH_INFO' => '/new-load'
@@ -182,6 +261,7 @@ Stack trace:
 2015-01-04 20:59:36 [127.0.0.1][1][-][info][application] $_COOKIE = [
     '_csrf' => 'e9b006c1b1cacc9850261db40e2da050fb6530ff4d07bd676cb8dc9a398e5a9es:32:\"D5OdmDCIX5evFfzPQ_J1xzkpDY8zZE1j\";'
     'PHPSESSID' => 'pq15lef1bt6vs3cdcn89745897'
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     '_identity' => 'e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s:23:\"[\"1\",\"authKey\",2592000]\";'
 ]
 
@@ -191,6 +271,17 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
+    'HTTP_HOST' => 'sps.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36'
+    'HTTP_REFERER' => 'http://sps.local/config'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1426035fefc1b22418c51254b6b9e783a5b6b7eef17eb291b3f40721799d0873s%3A32%3A%22D2MzSuOdlEmGNhVld132ykRQ8muI5yS_%22%3B; PHPSESSID=2890b25su4qt3edh506npga891; _identity=e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s%3A23%3A%22%5B%221%22%2C%22authKey%22%2C2592000%5D%22%3B'
+=======
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'spas.local'
     'HTTP_CONNECTION' => 'keep-alive'
@@ -201,6 +292,7 @@ $_SERVER = [
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
     'HTTP_COOKIE' => '_csrf=e9b006c1b1cacc9850261db40e2da050fb6530ff4d07bd676cb8dc9a398e5a9es%3A32%3A%22D5OdmDCIX5evFfzPQ_J1xzkpDY8zZE1j%22%3B; PHPSESSID=pq15lef1bt6vs3cdcn89745897; _identity=e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s%3A23%3A%22%5B%221%22%2C%22authKey%22%2C2592000%5D%22%3B'
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     'PATH' => 'D:\\server\\modules\\php\\PHP-5.5.4\\ext;D:\\server\\modules\\imagemagick;D:\\server\\modules\\php\\PHP-5.5.4;D:\\server\\modules\\database\\MySQL-5.1.71\\bin;D:\\server\\modules\\http\\Apache-2.4.6\\bin;D:\\server\\modules\\http\\Apache-2.4.6;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
@@ -208,6 +300,19 @@ $_SERVER = [
     'WINDIR' => 'C:\\Windows'
     'SERVER_SIGNATURE' => ''
     'SERVER_SOFTWARE' => 'Apache'
+<<<<<<< HEAD
+    'SERVER_NAME' => 'sps.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/sps.local'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/sps.local'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/Dropbox/Work/domains/sps.local/index.php'
+    'REMOTE_PORT' => '58855'
+=======
     'SERVER_NAME' => 'spas.local'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -220,10 +325,43 @@ $_SERVER = [
     'SCRIPT_FILENAME' => 'D:/Dropbox/Work/domains/spas.local/index.php'
     'REMOTE_PORT' => '60538'
     'REDIRECT_URL' => '/new-load'
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
+<<<<<<< HEAD
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1422281654.465
+    'REQUEST_TIME' => 1422281654
+    'argv' => []
+    'argc' => 0
+]
+2015-01-26 18:17:05 [127.0.0.1][1][2890b25su4qt3edh506npga891][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Using $this when not in object context' in D:\Dropbox\Work\domains\sps.local\app\views\common\table.php:5
+Stack trace:
+#0 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#1 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#2 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#3 D:\Dropbox\Work\domains\sps.local\app\views\site\index.php(14): yii\base\View->render()
+#4 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#5 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#6 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#7 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#8 D:\Dropbox\Work\domains\sps.local\app\controllers\SiteController.php(59): yii\base\Controller->render()
+#9 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionIndex()
+#10 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#11 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#12 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#13 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#14 D:\Dropbox\Work\domains\sps.local\app\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#15 D:\Dropbox\Work\domains\sps.local\index.php(12): yii\base\Application->run()
+#16 {main}
+2015-01-26 18:17:04 [127.0.0.1][1][2890b25su4qt3edh506npga891][info][application] $_COOKIE = [
+    '_csrf' => '1426035fefc1b22418c51254b6b9e783a5b6b7eef17eb291b3f40721799d0873s:32:\"D2MzSuOdlEmGNhVld132ykRQ8muI5yS_\";'
+    'PHPSESSID' => '2890b25su4qt3edh506npga891'
+=======
     'REQUEST_URI' => '/new-load'
     'SCRIPT_NAME' => '/index.php'
     'PATH_INFO' => '/new-load'
@@ -257,6 +395,7 @@ Stack trace:
 2015-01-04 21:51:48 [127.0.0.1][1][pq15lef1bt6vs3cdcn89745897][info][application] $_COOKIE = [
     '_csrf' => 'e9b006c1b1cacc9850261db40e2da050fb6530ff4d07bd676cb8dc9a398e5a9es:32:\"D5OdmDCIX5evFfzPQ_J1xzkpDY8zZE1j\";'
     'PHPSESSID' => 'pq15lef1bt6vs3cdcn89745897'
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     '_identity' => 'e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s:23:\"[\"1\",\"authKey\",2592000]\";'
 ]
 
@@ -266,6 +405,17 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
+    'HTTP_HOST' => 'sps.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36'
+    'HTTP_REFERER' => 'http://sps.local/config'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1426035fefc1b22418c51254b6b9e783a5b6b7eef17eb291b3f40721799d0873s%3A32%3A%22D2MzSuOdlEmGNhVld132ykRQ8muI5yS_%22%3B; PHPSESSID=2890b25su4qt3edh506npga891; _identity=e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s%3A23%3A%22%5B%221%22%2C%22authKey%22%2C2592000%5D%22%3B'
+=======
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'spas.local'
     'HTTP_CONNECTION' => 'keep-alive'
@@ -276,6 +426,7 @@ $_SERVER = [
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
     'HTTP_COOKIE' => '_csrf=e9b006c1b1cacc9850261db40e2da050fb6530ff4d07bd676cb8dc9a398e5a9es%3A32%3A%22D5OdmDCIX5evFfzPQ_J1xzkpDY8zZE1j%22%3B; PHPSESSID=pq15lef1bt6vs3cdcn89745897; _identity=e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s%3A23%3A%22%5B%221%22%2C%22authKey%22%2C2592000%5D%22%3B'
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     'PATH' => 'D:\\server\\modules\\php\\PHP-5.5.4\\ext;D:\\server\\modules\\imagemagick;D:\\server\\modules\\php\\PHP-5.5.4;D:\\server\\modules\\database\\MySQL-5.1.71\\bin;D:\\server\\modules\\http\\Apache-2.4.6\\bin;D:\\server\\modules\\http\\Apache-2.4.6;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
@@ -283,6 +434,19 @@ $_SERVER = [
     'WINDIR' => 'C:\\Windows'
     'SERVER_SIGNATURE' => ''
     'SERVER_SOFTWARE' => 'Apache'
+<<<<<<< HEAD
+    'SERVER_NAME' => 'sps.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/sps.local'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/sps.local'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/Dropbox/Work/domains/sps.local/index.php'
+    'REMOTE_PORT' => '59575'
+=======
     'SERVER_NAME' => 'spas.local'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -295,10 +459,21 @@ $_SERVER = [
     'SCRIPT_FILENAME' => 'D:/Dropbox/Work/domains/spas.local/index.php'
     'REMOTE_PORT' => '62534'
     'REDIRECT_URL' => '/new-load'
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
+<<<<<<< HEAD
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1422281824.561
+    'REQUEST_TIME' => 1422281824
+    'argv' => []
+    'argc' => 0
+]
+=======
     'REQUEST_URI' => '/new-load'
     'SCRIPT_NAME' => '/index.php'
     'PATH_INFO' => '/new-load'
@@ -17859,3 +18034,4 @@ Stack trace:
     'REQUEST_TIME_FLOAT' => 1422150504.869
     'REQUEST_TIME' => 1422150504
 ]
+>>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
