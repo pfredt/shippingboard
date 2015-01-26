@@ -18035,3 +18035,51 @@ Stack trace:
     'REQUEST_TIME' => 1422150504
 ]
 >>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
+2015-01-26 22:10:22 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<<' (T_SL)' in D:\Dropbox\Work\domains\trailer.local\controllers\SiteController.php:5
+Stack trace:
+#0 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#5 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 D:\Dropbox\Work\domains\trailer.local\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2015-01-26 22:10:22 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'trailer.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'D:\\server\\modules\\php\\PHP-5.5.4\\ext;D:\\server\\modules\\imagemagick;D:\\server\\modules\\php\\PHP-5.5.4;D:\\server\\modules\\database\\MySQL-5.1.71\\bin;D:\\server\\modules\\http\\Apache-2.4.6\\bin;D:\\server\\modules\\http\\Apache-2.4.6;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/trailer.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/trailer.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/Dropbox/Work/domains/trailer.local/web/index.php'
+    'REMOTE_PORT' => '65249'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1422295822.577
+    'REQUEST_TIME' => 1422295822
+    'argv' => []
+    'argc' => 0
+]

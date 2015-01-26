@@ -33,7 +33,6 @@
           ],
         ]);
 
-<<<<<<< HEAD
         $items = [
           ['label' => 'View Loads', 'url' => ['/site/index']],
         ];
@@ -43,11 +42,6 @@
           $items[] = ['label' => 'Customizations', 'url' => ['/site/config']];
         }
 
-=======
-        $items = [['label' => 'View Loads', 'url' => ['/site/index']],];
-        if (!Yii::$app->user->isGuest)
-          $items[] = ['label' => 'View Completed Loads', 'url' => ['/site/index', 'showCompleted' => 1]];
->>>>>>> 2558046e9c6f30960af49028f08c9a4981e60b88
         $items[] = ['label' => 'New Load', 'url' => ['/load/create']];
         $items[] = Yii::$app->user->isGuest ? ['label' => 'Login', 'url' => ['/site/login']] : ['label' => 'Logout (' . Yii::$app->user->identity->username . ')', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']];
 
