@@ -18083,3 +18083,78 @@ Stack trace:
     'argv' => []
     'argc' => 0
 ]
+2015-01-26 22:38:09 [127.0.0.1][1][jgsj8f66qi51cvaai0oc4oliq2][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Namespace declaration statement has to be the very first statement in the script' in D:\Dropbox\Work\domains\trailer.local\widgets\MultiSelect.php:3
+Stack trace:
+#0 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\View.php(67): ::spl_autoload_call()
+#1 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#2 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#3 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#4 D:\Dropbox\Work\domains\trailer.local\views\load\create.php(17): yii\base\View->render()
+#5 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#6 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#7 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#8 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#9 D:\Dropbox\Work\domains\trailer.local\controllers\LoadController.php(63): yii\base\Controller->render()
+#10 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\LoadController->actionCreate()
+#11 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#12 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#13 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#14 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#15 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#16 D:\Dropbox\Work\domains\trailer.local\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2015-01-26 22:38:08 [127.0.0.1][1][jgsj8f66qi51cvaai0oc4oliq2][info][application] $_COOKIE = [
+    '_csrf' => '9ca4b180d45e044805c11315cfac53e98f300e67bc9577573ee3a1a62bc13686s:32:\"pg-3UJcFUBQWdgVeNrtXw-M8NICFqFi8\";'
+    '_identity' => 'e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s:23:\"[\"1\",\"authKey\",2592000]\";'
+    'PHPSESSID' => 'jgsj8f66qi51cvaai0oc4oliq2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'trailer.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36'
+    'HTTP_REFERER' => 'http://trailer.local/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=9ca4b180d45e044805c11315cfac53e98f300e67bc9577573ee3a1a62bc13686s%3A32%3A%22pg-3UJcFUBQWdgVeNrtXw-M8NICFqFi8%22%3B; _identity=e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s%3A23%3A%22%5B%221%22%2C%22authKey%22%2C2592000%5D%22%3B; PHPSESSID=jgsj8f66qi51cvaai0oc4oliq2'
+    'PATH' => 'D:\\server\\modules\\php\\PHP-5.5.4\\ext;D:\\server\\modules\\imagemagick;D:\\server\\modules\\php\\PHP-5.5.4;D:\\server\\modules\\database\\MySQL-5.1.71\\bin;D:\\server\\modules\\http\\Apache-2.4.6\\bin;D:\\server\\modules\\http\\Apache-2.4.6;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/trailer.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/trailer.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/Dropbox/Work/domains/trailer.local/web/index.php'
+    'REMOTE_PORT' => '49981'
+    'REDIRECT_URL' => '/new-load'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/new-load'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/new-load'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\new-load'
+    'PHP_SELF' => '/index.php/new-load'
+    'REQUEST_TIME_FLOAT' => 1422297488.525
+    'REQUEST_TIME' => 1422297488
+    'argv' => []
+    'argc' => 0
+]
