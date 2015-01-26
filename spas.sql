@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `config` (
   `type` text,
   `description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 -- Дамп данных таблицы spas.config: ~14 rows (приблизительно)
 /*!40000 ALTER TABLE `config` DISABLE KEYS */;
@@ -36,7 +36,8 @@ INSERT INTO `config` (`id`, `key`, `value`, `type`, `description`) VALUES
 	(11, 'swim-spas-border-color', '#000000', 'color', 'Swim Spas Outline Color'),
 	(12, 'spas-color', '#ffffff', 'color', 'Spas Text Color'),
 	(13, 'swim-spas-color', '#ffffff', 'color', 'Swim Spas Text Color'),
-	(14, 'line-color', '#609f13', 'color', 'Table Border Line');
+	(14, 'line-color', '#609f13', 'color', 'Table Border Line'),
+	(15, 'border-color', 'rgba(255, 0, 0, 0.63)', 'color', 'Borders Color');
 /*!40000 ALTER TABLE `config` ENABLE KEYS */;
 
 
