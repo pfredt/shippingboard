@@ -60,7 +60,7 @@
         ?>
 
         <tr class="day<?= $day ?>">
-          <td><?= $item->processed ? "<i class='glyphicon glyphicon-ok'></i>" : "<i class='glyphicon glyphicon-remove'></i>"; ?></td>
+          <td><?= $item->processed ? "<i class='glyphicon glyphicon-ok'></i>" : ""; ?></td>
           <td><?= date("m/d/Y", $item->shipping_date); ?></td>
           <td><?= $item->dealer; ?></td>
           <td><?= $item->number_of_spas; ?></td>
@@ -68,7 +68,7 @@
           <td><?= $item->shipper; ?></td>
           <td><?= $item->trailer_type; ?></td>
           <td><?= Yii::$app->params['status'][$item->status]; ?></td>
-          <td><?= $item->completed ? "<i class='glyphicon glyphicon-ok'></i>" : "<i class='glyphicon glyphicon-remove'></i>"; ?></td>
+          <td><?= $item->completed ? "<i class='glyphicon glyphicon-ok'></i>" : ""; ?></td>
         </tr>
         <tr class="day<?= $day ?>">
           <td colspan="9" style="font-size: 16px;">
