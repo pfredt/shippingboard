@@ -50,9 +50,11 @@
           'items'   => $items,
         ]);
         NavBar::end();
+
+        echo Yii::$app->request->url;
       ?>
 
-      <div class="container<?= $this->context->module->controller->action->id == "index" ? "-fluid" : "" ?>">
+      <div class="container<?= Yii::$app->request->url == "/" || Yii::$app->request->url == "/site" ? "-fluid" : "" ?>">
         <?= Breadcrumbs::widget([
           'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>

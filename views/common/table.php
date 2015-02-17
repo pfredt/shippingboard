@@ -15,12 +15,16 @@
   .heading-style {
   <?= writeHeading(); ?>
   }
-  <?php for($i = 1; $i < 8; $i++) { ?>
-  .day<?= $i ?> td  {
+  <?php for($i = 1; $i < 10; $i++) { ?>
+  .<?= "day".$i ?> td {
   <?= writeColor($i); ?>
   }
   <?php } ?>
-  .table > tbody > tr > td{border-color: <?= Yii::$app->params['config']['border-color'] ?>;}
+  .table > tbody > tr > td { border-color: <?= Yii::$app->params['config']['border-color'] ?>; }
+  .table .dealer-weight { font-weight: <?= Yii::$app->params['config']['dealer-weight'] ?>; }
+  .table .trailer-weight { font-weight: <?= Yii::$app->params['config']['trailer-type-weight'] ?>; }
+  .table .same-bottom td {border-bottom-width: <?= Yii::$app->params['config']['border-thinkness'] ?>px;}
+  .table .same-top td {border-top-width: <?= Yii::$app->params['config']['border-thinkness'] ?>px;}
 </style>
 
 <div class="col-lg-10">
@@ -45,7 +49,7 @@
         <?php
         $start = mktime(0, 0, 0);
         $step = 60 * 60 * 24 - 1;
-        for ($i = 1; $i <= 8; $i++) {
+        for ($i = 1; $i <= 9; $i++) {
           if ($item->shipping_date >= $start && $item->shipping_date <= $start + $step) {
             $days[$i][0] += $item->number_of_spas;
             $days[$i][1] += $item->number_of_swimspas;
@@ -59,14 +63,14 @@
         $day = date("N", $item->shipping_date);
         ?>
 
-        <tr class="day<?= $day ?>">
+        <tr class="day<?= $day ?> <?= ( ($items[$key - 1]->shipping_date == $item->shipping_date || $items[$key + 1]->shipping_date == $item->shipping_date) ? "same-top" : "" )?>">
           <td><?= $item->processed ? "<i class='glyphicon glyphicon-ok'></i>" : "<i class='glyphicon glyphicon-remove'></i>"; ?></td>
           <td><?= date("m/d/Y", $item->shipping_date); ?></td>
-          <td><?= $item->dealer; ?></td>
+          <td class="dealer-weight"><?= $item->dealer; ?></td>
           <td><?= $item->number_of_spas; ?></td>
           <td><?= $item->number_of_swimspas; ?></td>
           <td><?= $item->shipper; ?></td>
-          <td><?= $item->trailer_type; ?></td>
+          <td class="trailer-weight"><?= $item->trailer_type; ?></td>
           <td><?= Yii::$app->params['status'][$item->status]; ?></td>
           <td><?= $item->completed ? "<i class='glyphicon glyphicon-ok'></i>" : "<i class='glyphicon glyphicon-remove'></i>"; ?></td>
         </tr>
@@ -102,7 +106,7 @@
             ?>
           </td>
         </tr>
-        <tr class="day<?= $day ?>">
+        <tr class="day<?= $day ?> <?= ( ($items[$key - 1]->shipping_date == $item->shipping_date && $items[$key + 1]->shipping_date != $item->shipping_date) ? "same-bottom" : "" ) ?>">
           <td colspan="9">
             &nbsp;
             <?= Yii::$app->user->isGuest ? "" : yii\helpers\Html::a('Update', ['load/update', 'id' => $item->trailer_load_id], ['class' => 'btn btn-primary']) . "&nbsp;&nbsp;&nbsp;" . yii\helpers\Html::a('Delete', ['load/delete', 'id' => $item->trailer_load_id], ['class' => 'btn btn-danger']); ?>
@@ -123,10 +127,10 @@
     </thead>
     <?php $sum = [0, 0];
       $start = mktime(0, 0, 0);
-      for ($i = 1; $i <= 7; $i++) {
+      for ($i = 1; $i <= 9; $i++) {
         $sum[0] += $days[$i][0];
         $sum[1] += $days[$i][1];
-        $day = date("N", $start);
+        $day = $i;
         ?>
         <tr class="day<?= $day ?>">
           <td><?= date("l", $start); ?></td>

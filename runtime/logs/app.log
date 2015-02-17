@@ -18158,3 +18158,165 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2015-02-17 20:47:25 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#6 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#8 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#9 D:\Dropbox\Work\domains\trailer.local\components\BasicController.php(14): yii\db\ActiveQuery->all()
+#10 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Object.php(107): app\components\BasicController->init()
+#11 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Controller.php(81): yii\base\Object->__construct(Array)
+#12 [internal function]: yii\base\Controller->__construct('site', Object(yii\web\Application), Array)
+#13 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#14 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('app\controllers...', Array, Array)
+#15 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('app\controllers...', Array)
+#16 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(568): yii\BaseYii::createObject('app\controllers...', Array)
+#17 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('site')
+#18 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('site/index')
+#19 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/index', Array)
+#20 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 D:\Dropbox\Work\domains\trailer.local\web\index.php(12): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#4 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#6 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#7 D:\Dropbox\Work\domains\trailer.local\components\BasicController.php(14): yii\db\ActiveQuery->all()
+#8 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Object.php(107): app\components\BasicController->init()
+#9 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Controller.php(81): yii\base\Object->__construct(Array)
+#10 [internal function]: yii\base\Controller->__construct('site', Object(yii\web\Application), Array)
+#11 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#12 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('app\controllers...', Array, Array)
+#13 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('app\controllers...', Array)
+#14 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(568): yii\BaseYii::createObject('app\controllers...', Array)
+#15 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('site')
+#16 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('site/index')
+#17 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/index', Array)
+#18 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\Dropbox\Work\domains\trailer.local\web\index.php(12): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-02-17 20:47:23 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '9ca4b180d45e044805c11315cfac53e98f300e67bc9577573ee3a1a62bc13686s:32:\"pg-3UJcFUBQWdgVeNrtXw-M8NICFqFi8\";'
+    'PHPSESSID' => 'gi7ah9jsn5qkte4gquisfjhg03'
+    '_identity' => 'e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s:23:\"[\"1\",\"authKey\",2592000]\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'trailer.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=9ca4b180d45e044805c11315cfac53e98f300e67bc9577573ee3a1a62bc13686s%3A32%3A%22pg-3UJcFUBQWdgVeNrtXw-M8NICFqFi8%22%3B; PHPSESSID=gi7ah9jsn5qkte4gquisfjhg03; _identity=e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s%3A23%3A%22%5B%221%22%2C%22authKey%22%2C2592000%5D%22%3B'
+    'PATH' => 'D:\\server\\modules\\php\\PHP-5.5.4\\ext;D:\\server\\modules\\imagemagick;D:\\server\\modules\\php\\PHP-5.5.4;D:\\server\\modules\\database\\MySQL-5.1.71\\bin;D:\\server\\modules\\http\\Apache-2.4.6\\bin;D:\\server\\modules\\http\\Apache-2.4.6;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/trailer.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/trailer.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/Dropbox/Work/domains/trailer.local/web/index.php'
+    'REMOTE_PORT' => '49517'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1424191643.747
+    'REQUEST_TIME' => 1424191643
+    'argv' => []
+    'argc' => 0
+]
+2015-02-17 23:01:18 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "рще-еги/index".' in D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('??????-??????/i...', Array)
+#1 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Dropbox\Work\domains\trailer.local\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "рще-еги/index".' in D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\Dropbox\Work\domains\trailer.local\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Dropbox\Work\domains\trailer.local\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2015-02-17 23:01:18 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '9ca4b180d45e044805c11315cfac53e98f300e67bc9577573ee3a1a62bc13686s:32:\"pg-3UJcFUBQWdgVeNrtXw-M8NICFqFi8\";'
+    'PHPSESSID' => 'nu4c5hocafgth3lmrel7r0bd55'
+    '_identity' => 'e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s:23:\"[\"1\",\"authKey\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'trailer.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=9ca4b180d45e044805c11315cfac53e98f300e67bc9577573ee3a1a62bc13686s%3A32%3A%22pg-3UJcFUBQWdgVeNrtXw-M8NICFqFi8%22%3B; PHPSESSID=nu4c5hocafgth3lmrel7r0bd55; _identity=e374e083e8f20afa354c41ecb9c5c0d858fad771e04605cb9747528ca1d25875s%3A23%3A%22%5B%221%22%2C%22authKey%22%2C2592000%5D%22%3B'
+    'PATH' => 'D:\\server\\modules\\php\\PHP-5.5.4\\ext;D:\\server\\modules\\imagemagick;D:\\server\\modules\\php\\PHP-5.5.4;D:\\server\\modules\\database\\MySQL-5.1.71\\bin;D:\\server\\modules\\http\\Apache-2.4.6\\bin;D:\\server\\modules\\http\\Apache-2.4.6;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/trailer.local/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Dropbox/Work/domains/trailer.local/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/Dropbox/Work/domains/trailer.local/web/index.php'
+    'REMOTE_PORT' => '57627'
+    'REDIRECT_URL' => '/рще-еги'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/%D1%80%D1%89%D0%B5-%D0%B5%D0%B3%D0%B8'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/рще-еги'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\рще-еги'
+    'PHP_SELF' => '/index.php/рще-еги'
+    'REQUEST_TIME_FLOAT' => 1424199678.029
+    'REQUEST_TIME' => 1424199678
+    'argv' => []
+    'argc' => 0
+]

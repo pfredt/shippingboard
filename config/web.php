@@ -39,14 +39,21 @@
         'showScriptName'      => FALSE,
         'enableStrictParsing' => TRUE,
         'rules'               => [
-          'new-load'       => 'load/create',
-          'edit-load'      => 'load/update',
-          'delete-load'    => 'load/delete',
-          'config' => 'site/config',
-          'get-new-loads'  => 'load/get',
-          'login'          => 'site/login',
-          'logout'         => 'site/logout',
-          ''               => 'site/index',
+          'new-load'                                         => 'load/create',
+          'edit-load'                                        => 'load/update',
+          'delete-load'                                      => 'load/delete',
+          'config'                                           => 'site/config',
+          'get-new-loads'                                    => 'load/get',
+          'login'                                            => 'site/login',
+          'logout'                                           => 'site/logout',
+
+          ''                                                 => 'site/index',
+
+          '<controller:([^\/]+)>'                            => '<controller>/index',
+          '<controller:([^\/]+)>/<action:([^\/]+)>'          => '<controller>/<action>',
+          '<controller:([^\/]+)>/<action:([^\/]+)>/<id:\d+>' => '<controller>/<action>',
+
+
         ],
       ],
 

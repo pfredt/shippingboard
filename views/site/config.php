@@ -28,13 +28,17 @@
     <div class="row">
       <div class="col-lg-8">
         <?php
-          switch($item->type) {
+          switch ($item->type) {
             case 'color':
               echo $form->field($item, 'value')->textInput(['class' => 'colorpicker form-control'])->label($item->description);
               break;
 
             case 'weight':
               echo $form->field($item, 'value')->dropDownList(Yii::$app->params['weight'])->label($item->description);
+              break;
+
+            case 'size':
+              echo $form->field($item, 'value')->textInput(['class' => 'number form-control', 'min' => 1]);
               break;
           }
         ?>
