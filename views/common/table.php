@@ -72,7 +72,7 @@
           <td><?= $item->shipper; ?></td>
           <td class="trailer-weight"><?= $item->trailer_type; ?></td>
           <td><?= Yii::$app->params['status'][$item->status]; ?></td>
-          <td><?= $item->completed ? "<i class='glyphicon glyphicon-ok'></i>" : "<i class='glyphicon glyphicon-remove'></i>"; ?></td>
+          <td><?= $item->completed ? "<i class='glyphicon glyphicon-ok'></i>" : ""; ?></td>
         </tr>
         <tr class="day<?= $day ?>">
           <td colspan="9" style="font-size: 16px;">
