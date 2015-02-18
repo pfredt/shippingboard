@@ -43,7 +43,7 @@
         [['shipping_date'], 'required'],
         [['dealer', 'shipping_date'], 'string', 'max' => 255],
         [['status', 'shipper', 'trailer_type'], 'string', 'max' => 55],
-        [['dealer', 'number_of_spas', 'number_of_swimspas', 'shipper', 'trailer_type', 'status', 'shipping_date', 'spas_model', 'swim_spas_model'], 'safe'],
+        [['dealer', 'number_of_spas', 'number_of_swimspas', 'shipper', 'trailer_type', 'status', 'shipping_date', 'spas_model', 'swim_spas_model', 'thinkness', 'weight'], 'safe'],
       ];
     }
 

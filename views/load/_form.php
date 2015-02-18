@@ -80,6 +80,12 @@
       <?= $form->field($model, 'trailer_type')->textInput(['maxlength' => 55]) ?>
 
       <?= $form->field($model, 'status')->dropDownList(Yii::$app->params['status']); ?>
+
+      <?= $form->field($model, 'thinkness')->textInput(['class' => 'number form-control', 'min' => 1]) ?>
+
+      <?= $form->field($model, 'weight')->dropDownList(Yii::$app->params['weight']) ?>
+
+
     </div>
   </div>
 

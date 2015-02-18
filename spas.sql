@@ -20,18 +20,16 @@ CREATE TABLE IF NOT EXISTS `config` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы spas.config: ~18 rows (приблизительно)
+-- Дамп данных таблицы spas.config: ~17 rows (приблизительно)
 /*!40000 ALTER TABLE `config` DISABLE KEYS */;
 INSERT INTO `config` (`id`, `key`, `value`, `type`, `description`) VALUES
-	(1, 'day1', '#fdf39a', 'color', 'Day1'),
-	(2, 'day2', 'rgba(218, 139, 163, 0.47)', 'color', 'Day2'),
-	(3, 'day3', 'rgba(218, 167, 139, 0.6)', 'color', 'Day3'),
-	(4, 'day4', 'rgba(139, 202, 218, 0.2)', 'color', 'Day4'),
-	(5, 'day5', '#8bdac2', 'color', 'Day5'),
-	(6, 'day6', '#8b93da', 'color', 'Day6'),
-	(7, 'day7', '#8fda8b', 'color', 'Day7'),
-	(8, 'day8', 'rgba(52, 110, 49, 0.35)', 'color', 'Day8'),
-	(9, 'day9', '#daba8b', 'color', 'Day9'),
+	(1, 'day1', '#fdf39a', 'color', 'Monday'),
+	(2, 'day2', 'rgba(218, 139, 163, 0.47)', 'color', 'Tuesday'),
+	(3, 'day3', 'rgba(218, 167, 139, 0.6)', 'color', 'Wednesday'),
+	(4, 'day4', 'rgba(139, 202, 218, 0.2)', 'color', 'Thursday'),
+	(5, 'day5', '#8bdac2', 'color', 'Friday'),
+	(6, 'day6', '#ffffff', 'color', 'Saturday'),
+	(7, 'day7', '#ffffff', 'color', 'Sunday'),
 	(10, 'spas-border-color', '#000000', 'color', 'Spas Outline Color'),
 	(11, 'swim-spas-border-color', '#000000', 'color', 'Swim Spas Outline Color'),
 	(12, 'spas-color', '#ffffff', 'color', 'Spas Text Color'),
@@ -40,9 +38,8 @@ INSERT INTO `config` (`id`, `key`, `value`, `type`, `description`) VALUES
 	(15, 'border-color', 'rgba(255, 0, 0, 0.63)', 'color', 'Borders Color'),
 	(18, 'heading-weight', 'bold', 'weight', 'Heading Weight'),
 	(19, 'heading', '#e82c65', 'color', 'Heading Color'),
-	(20, 'trailer-type-weight', 'bold', 'weight', 'Trailer Type Weight'),
-	(21, 'dealer-weight', 'bold', 'weight', 'Dealer Weight'),
-	(22, 'border-thinkness', '4', 'size', 'Border Thinkness');
+	(20, 'default-top-row-weight', 'regular', 'weight', 'Default Top Wow Weight'),
+	(22, 'default-border-thinkness', '1', 'size', 'Default Border Thinkness');
 /*!40000 ALTER TABLE `config` ENABLE KEYS */;
 
 
@@ -139,29 +136,32 @@ CREATE TABLE IF NOT EXISTS `trailer_load` (
   `dealer` varchar(255) DEFAULT NULL,
   `number_of_spas` int(11) DEFAULT NULL,
   `number_of_swimspas` int(11) DEFAULT NULL,
+  `thinkness` int(11) DEFAULT NULL,
+  `weight` text,
   `shipper` varchar(55) DEFAULT NULL,
   `trailer_type` varchar(55) DEFAULT NULL,
   `status` varchar(55) DEFAULT NULL,
   PRIMARY KEY (`trailer_load_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы spas.trailer_load: ~12 rows (приблизительно)
+-- Дамп данных таблицы spas.trailer_load: ~15 rows (приблизительно)
 /*!40000 ALTER TABLE `trailer_load` DISABLE KEYS */;
-INSERT INTO `trailer_load` (`trailer_load_id`, `shipping_date`, `completed`, `processed`, `dealer`, `number_of_spas`, `number_of_swimspas`, `shipper`, `trailer_type`, `status`) VALUES
-	(4, '1421611200', 0, 1, '', 4, NULL, '', '', '1'),
-	(5, '1421697600', 0, 0, '', NULL, 4, '', '', '1'),
-	(6, '1421784000', 0, 0, '', 2, 2, '', '', '1'),
-	(7, '1421870400', 0, 0, '', 1, 2, '', '', '1'),
-	(8, '1421956800', 0, 0, '', 2, 1, '', '', '1'),
-	(9, '1422043200', 0, NULL, '', NULL, NULL, '', '', ''),
-	(10, '1422129600', 0, NULL, '', NULL, NULL, '', '', ''),
-	(11, '1421524800', 0, 0, '', 2, 1, '', '', '1'),
-	(12, '1421352000', 0, 0, '', NULL, NULL, '', '', '1'),
-	(13, '1422302400', 0, 0, '', NULL, NULL, '', '', '1'),
-	(14, '1422388800', 0, 0, '', NULL, NULL, '', '', '1'),
-	(15, '1422475200', 0, 0, '', NULL, NULL, '', '', '1'),
-	(16, '1424376000', 0, 0, 'gfhdfgh', NULL, NULL, 'dfghdfgh', 'dghgh', '1'),
-	(17, '1424376000', 0, 0, 'fgs', NULL, NULL, 'dfdfsg', 'dfsgdfg', '1');
+INSERT INTO `trailer_load` (`trailer_load_id`, `shipping_date`, `completed`, `processed`, `dealer`, `number_of_spas`, `number_of_swimspas`, `thinkness`, `weight`, `shipper`, `trailer_type`, `status`) VALUES
+	(4, '1421611200', 0, 1, '', 4, NULL, 1, 'regular', '', '', '1'),
+	(5, '1421697600', 0, 0, '', NULL, 4, 1, 'regular', '', '', '1'),
+	(6, '1421784000', 0, 0, '', 2, 2, 1, 'regular', '', '', '1'),
+	(7, '1421870400', 0, 0, '', 1, 2, 1, 'regular', '', '', '1'),
+	(8, '1421956800', 0, 0, '', 2, 1, 1, 'regular', '', '', '1'),
+	(9, '1422043200', 0, NULL, '', NULL, NULL, 1, 'regular', '', '', ''),
+	(10, '1422129600', 0, NULL, '', NULL, NULL, 1, 'regular', '', '', ''),
+	(11, '1421524800', 0, 0, '', 2, 1, 1, 'regular', '', '', '1'),
+	(12, '1421352000', 0, 0, '', NULL, NULL, 1, 'regular', '', '', '1'),
+	(13, '1422302400', 0, 0, '', NULL, NULL, 1, 'regular', '', '', '1'),
+	(14, '1422388800', 0, 0, '', NULL, NULL, 1, 'regular', '', '', '1'),
+	(15, '1422475200', 0, 0, '', NULL, NULL, 1, 'regular', '', '', '1'),
+	(16, '1424376000', 0, 0, 'gfhdfgh', NULL, NULL, 1, 'regular', 'dfghdfgh', 'dghgh', '1'),
+	(17, '1424376000', 0, 0, 'fgs', NULL, NULL, 1, 'regular', 'dfdfsg', 'dfsgdfg', '1'),
+	(18, '1424721600', 0, 0, 'fghdfgh', NULL, NULL, 10, 'normal', 'fghdfg', 'hdfghdfg', '1');
 /*!40000 ALTER TABLE `trailer_load` ENABLE KEYS */;
 
 

@@ -21,10 +21,6 @@
   }
   <?php } ?>
   .table > tbody > tr > td { border-color: <?= Yii::$app->params['config']['border-color'] ?>; }
-  .table .dealer-weight { font-weight: <?= Yii::$app->params['config']['dealer-weight'] ?>; }
-  .table .trailer-weight { font-weight: <?= Yii::$app->params['config']['trailer-type-weight'] ?>; }
-  .table .same-bottom td {border-bottom-width: <?= Yii::$app->params['config']['border-thinkness'] ?>px;}
-  .table .same-top td {border-top-width: <?= Yii::$app->params['config']['border-thinkness'] ?>px;}
 </style>
 
 <div class="col-lg-10">
@@ -61,18 +57,19 @@
         }
 
         $day = date("N", $item->shipping_date);
+        $idd = uniqid();
         ?>
 
-        <tr class="day<?= $day ?> <?= ( ($items[$key - 1]->shipping_date == $item->shipping_date || $items[$key + 1]->shipping_date == $item->shipping_date) ? "same-top" : "" )?>">
-          <td><?= $item->processed ? "<i class='glyphicon glyphicon-ok'></i>" : "<i class='glyphicon glyphicon-remove'></i>"; ?></td>
-          <td><?= date("m/d/Y", $item->shipping_date); ?></td>
-          <td class="dealer-weight"><?= $item->dealer; ?></td>
-          <td><?= $item->number_of_spas; ?></td>
-          <td><?= $item->number_of_swimspas; ?></td>
-          <td><?= $item->shipper; ?></td>
-          <td class="trailer-weight"><?= $item->trailer_type; ?></td>
-          <td><?= Yii::$app->params['status'][$item->status]; ?></td>
-          <td><?= $item->completed ? "<i class='glyphicon glyphicon-ok'></i>" : ""; ?></td>
+        <tr class="day<?= $day ?> <?= $idd ?>" style="font-weight: <?= $item->weight ?>">
+          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->processed ? "<i class='glyphicon glyphicon-ok'></i>" : "<i class='glyphicon glyphicon-remove'></i>"; ?></td>
+          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= date("m/d/Y", $item->shipping_date); ?></td>
+          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->dealer; ?></td>
+          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->number_of_spas; ?></td>
+          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->number_of_swimspas; ?></td>
+          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->shipper; ?></td>
+          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->trailer_type; ?></td>
+          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= Yii::$app->params['status'][$item->status]; ?></td>
+          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->completed ? "<i class='glyphicon glyphicon-ok'></i>" : ""; ?></td>
         </tr>
         <tr class="day<?= $day ?>">
           <td colspan="9" style="font-size: 16px;">
@@ -106,7 +103,7 @@
             ?>
           </td>
         </tr>
-        <tr class="day<?= $day ?> <?= ( ($items[$key - 1]->shipping_date == $item->shipping_date && $items[$key + 1]->shipping_date != $item->shipping_date) ? "same-bottom" : "" ) ?>">
+        <tr class="day<?= $day ?>">
           <td colspan="9">
             &nbsp;
             <?= Yii::$app->user->isGuest ? "" : yii\helpers\Html::a('Update', ['load/update', 'id' => $item->trailer_load_id], ['class' => 'btn btn-primary']) . "&nbsp;&nbsp;&nbsp;" . yii\helpers\Html::a('Delete', ['load/delete', 'id' => $item->trailer_load_id], ['class' => 'btn btn-danger']); ?>
@@ -130,7 +127,7 @@
       for ($i = 1; $i <= 9; $i++) {
         $sum[0] += $days[$i][0];
         $sum[1] += $days[$i][1];
-        $day = $i;
+        $day = date("N", $start);
         ?>
         <tr class="day<?= $day ?>">
           <td><?= date("l", $start); ?></td>
