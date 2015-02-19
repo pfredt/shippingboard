@@ -43,7 +43,7 @@
     }
 
     public function actionIndex($showCompleted = 0) {
-      $query = TrailerLoad::find()->orderBy('shipping_date asc')->where(['>=', 'shipping_date', mktime(0, 0, 0)])->andWhere(['<', 'shipping_date', mktime(0, 0, 0) + 7 * 24 * 60 * 60]);
+      $query = TrailerLoad::find()->orderBy('shipping_date asc')->where(['>=', 'shipping_date', mktime(0, 0, 0)])->andWhere(['<', 'shipping_date', mktime(0, 0, 0) + 9 * 24 * 60 * 60]);
 
       if (Yii::$app->user->isGuest)
         $showCompleted = 0;
