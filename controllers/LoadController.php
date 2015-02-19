@@ -35,7 +35,7 @@
     public function actionGet() {
       $showCompleted = Yii::$app->request->get('showCompleted');
 
-      $query = TrailerLoad::find()->orderBy('shipping_date asc')->where(['>=', 'shipping_date', mktime(0, 0, 0)])->andWhere(['<', 'shipping_date', mktime(0, 0, 0) + 7 * 24 * 60 * 60]);
+      $query = TrailerLoad::find()->orderBy('shipping_date asc')->where(['>=', 'shipping_date', mktime(0, 0, 0)])->andWhere(['<', 'shipping_date', mktime(0, 0, 0) + 9 * 24 * 60 * 60]);
 
       if (!$showCompleted)
         $query->andWhere(['completed' => 0]);
