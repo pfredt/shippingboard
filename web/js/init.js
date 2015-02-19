@@ -16,7 +16,7 @@ $(document).ready(function () {
   $(".number").stepper();
 
   if ($("#lists-container").length) {
-    //setInterval("updateData()", 10 * 1000);
+    setInterval("updateData()", 10 * 1000);
   }
 
   $("input.colorpicker").ColorPickerSliders({
