@@ -37,8 +37,6 @@
     public function rules() {
       return [
         [['number_of_spas', 'number_of_swimspas'], 'integer', 'min' => 0],
-        [['number_of_spas'], 'integer', 'max' => 20],
-        [['number_of_swimspas'], 'integer', 'max' => 10],
         [['completed', 'processed'], 'boolean'],
         [['shipping_date'], 'required'],
         [['dealer', 'shipping_date'], 'string', 'max' => 255],

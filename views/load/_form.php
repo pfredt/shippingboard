@@ -71,9 +71,9 @@
     <div class="col-lg-6">
       <?= $form->field($model, 'dealer')->textInput(['maxlength' => 255]) ?>
 
-      <?= $form->field($model, 'number_of_spas')->textInput(['class' => 'number form-control', 'min' => 0, 'max' => 20]) ?>
+      <?= $form->field($model, 'number_of_spas')->textInput(['class' => 'number form-control', 'min' => 0]) ?>
 
-      <?= $form->field($model, 'number_of_swimspas')->textInput(['class' => 'number form-control', 'min' => 0, 'max' => 10]) ?>
+      <?= $form->field($model, 'number_of_swimspas')->textInput(['class' => 'number form-control', 'min' => 0]) ?>
 
       <?= $form->field($model, 'shipper')->textInput(['maxlength' => 55]) ?>
 
