@@ -6,13 +6,13 @@ body {
   min-height: 100%;
   height: auto;
   margin: 0 auto -60px;
-  padding: 0 0 60px;
+  padding: 0;
 }
 .wrap > .container-fluid:nth-child(2) {
-  padding: 70px 15px 20px;
+  padding: 70px 15px 0;
 }
 .wrap > .container {
-  padding: 70px 15px 20px;
+  padding: 70px 15px 0;
 }
 .footer {
   height: 60px;

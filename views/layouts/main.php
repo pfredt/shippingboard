@@ -61,7 +61,7 @@ AppAsset::register($this);
       </div>
     </div>
   </div>
-  <div class="container<?= Yii::$app->request->url == "/" || Yii::$app->request->url == "/site" ? "-fluid" : "" ?>">
+  <div class="container<?= Yii::$app->request->url == "/" || Yii::$app->request->url == "/site" || Yii::$app->request->url == "/site/history" ? "-fluid" : "" ?>">
     <?= Breadcrumbs::widget([
       'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
     ]) ?>
