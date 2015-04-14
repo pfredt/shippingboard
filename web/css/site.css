@@ -8,7 +8,7 @@ body {
   margin: 0 auto -60px;
   padding: 0 0 60px;
 }
-.wrap > .container-fluid {
+.wrap > .container-fluid:nth-child(2) {
   padding: 70px 15px 20px;
 }
 .wrap > .container {
