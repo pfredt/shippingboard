@@ -39,7 +39,7 @@ AppAsset::register($this);
 
       $items = [
         ['label' => 'View Loads', 'url' => ['/site/index']],
-        ['label' => 'Yesterday\'s Loads', 'url' => ['/site/history']],
+        ['label' => 'Load History', 'url' => ['/site/history']],
       ];
 
       if (!Yii::$app->user->isGuest) {
