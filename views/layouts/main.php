@@ -43,9 +43,9 @@ AppAsset::register($this);
       ];
 
       if (!Yii::$app->user->isGuest) {
-        $items[] = ['label' => 'View All Loads', 'url' => ['/site/index', 'showCompleted' => 1]];
+        $items[] = ['label' => 'View Completed Loads', 'url' => ['/site/index', 'showCompleted' => 1]];
         $items[] = ['label' => 'Customizations', 'url' => ['/site/config']];
-        $items[] = ['label' => 'Swi Spa Models', 'url' => ['/swim-spa/index']];
+        $items[] = ['label' => 'Swim Spa Models', 'url' => ['/swim-spa/index']];
         $items[] = ['label' => 'Hot Tub Models', 'url' => ['/hot-tub/index']];
       }
 
