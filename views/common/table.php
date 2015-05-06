@@ -61,7 +61,7 @@
         ?>
 
         <tr class="day<?= $day ?> <?= $idd ?>" style="font-weight: <?= $item->weight ?>">
-          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->processed ? "<i class='glyphicon glyphicon-ok'></i>" : "<i class='glyphicon glyphicon-remove'></i>"; ?></td>
+          <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->processed ? "<i class='glyphicon glyphicon-ok'></i>" : ""; ?></td>
           <td style="border-top-width: <?= $item->thinkness ?>px;"><?= date("m/d/Y", $item->shipping_date); ?></td>
           <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->dealer; ?></td>
           <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->number_of_spas; ?></td>
