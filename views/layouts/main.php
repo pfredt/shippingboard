@@ -43,7 +43,7 @@ AppAsset::register($this);
       ];
 
       if (!Yii::$app->user->isGuest) {
-        $items[] = ['label' => 'All Todays Load\'s', 'url' => ['/site/index', 'showCompleted' => 1]];
+        $items[] = ['label' => 'All Today\'s Loads', 'url' => ['/site/index', 'showCompleted' => 1]];
         $items[] = ['label' => 'Customizations', 'url' => ['/site/config']];
         $items[] = ['label' => 'Swim Spa Models', 'url' => ['/swim-spa/index']];
         $items[] = ['label' => 'Hot Tub Models', 'url' => ['/hot-tub/index']];
