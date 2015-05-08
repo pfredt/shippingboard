@@ -56,9 +56,20 @@
 
       $items = $query->all();
 
+      $spas_total = TrailerLoad::find()->where( [ 'completed' => 1 ] )->andWhere( [ '<=', 'shipping_date', mktime( 0, 0, 0 ) ] )->andWhere( [ '>=', 'shipping_date', mktime( 0, 0, 0 ) - 31 * 24 * 60 * 60 ] )->sum( 'number_of_spas' );
+      $swim_total = TrailerLoad::find()->where( [ 'completed' => 1 ] )->andWhere( [ '<=', 'shipping_date', mktime( 0, 0, 0 ) ] )->andWhere( [ '>=', 'shipping_date', mktime( 0, 0, 0 ) - 31 * 24 * 60 * 60 ] )->sum( 'number_of_swimspas' );
+
+      if ( $spas_total == NULL )
+        $spas_total = 0;
+      if ( $swim_total == NULL )
+        $swim_total = 0;
+
+
       return $this->render( 'index', [
         'items'         => $items,
         'showCompleted' => $showCompleted,
+        'spas_total'    => $spas_total,
+        'swim_total'    => $swim_total,
       ] );
     }
 

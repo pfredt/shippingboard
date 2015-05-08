@@ -16,12 +16,12 @@
       return [
         'access' => [
           'class' => AccessControl::className(),
-          'only'  => ['create', 'update', 'delete'],
+          'only'  => [ 'create', 'update', 'delete' ],
           'rules' => [
             [
               'allow'   => TRUE,
-              'actions' => ['create', 'update', 'delete'],
-              'roles'   => ['@'],
+              'actions' => [ 'create', 'update', 'delete' ],
+              'roles'   => [ '@' ],
             ],
           ],
         ]
@@ -33,18 +33,31 @@
      * @return mixed
      */
     public function actionGet() {
-      $showCompleted = Yii::$app->request->get('showCompleted');
+      $showCompleted = Yii::$app->request->get( 'showCompleted' );
 
-      $query = TrailerLoad::find()->orderBy('shipping_date asc')->where(['>=', 'shipping_date', mktime(0, 0, 0)])->andWhere(['<', 'shipping_date', mktime(0, 0, 0) + 9 * 24 * 60 * 60]);
+      $query = TrailerLoad::find()->orderBy( 'shipping_date asc' )->where( [ '>=', 'shipping_date', mktime( 0, 0, 0 ) ] )->andWhere( [ '<', 'shipping_date', mktime( 0, 0, 0 ) + 9 * 24 * 60 * 60 ] );
 
       $query->orWhere( ' (`completed` = 0 AND `shipping_date` < ' . mktime( 0, 0, 0 ) . ') ' );
 
-      if (!$showCompleted)
-        $query->andWhere(['completed' => 0]);
+      if ( !$showCompleted )
+        $query->andWhere( [ 'completed' => 0 ] );
 
       $items = $query->all();
 
-      return $this->renderFile("@app/views/common/table.php", ['items' => $items]);
+
+      $spas_total = TrailerLoad::find()->where( [ 'completed' => 1 ] )->andWhere( [ '<=', 'shipping_date', mktime( 0, 0, 0 ) ] )->andWhere( [ '>=', 'shipping_date', mktime( 0, 0, 0 ) - 31 * 24 * 60 * 60 ] )->sum( 'number_of_spas' );
+      $swim_total = TrailerLoad::find()->where( [ 'completed' => 1 ] )->andWhere( [ '<=', 'shipping_date', mktime( 0, 0, 0 ) ] )->andWhere( [ '>=', 'shipping_date', mktime( 0, 0, 0 ) - 31 * 24 * 60 * 60 ] )->sum( 'number_of_swimspas' );
+
+      if ( $spas_total == NULL )
+        $spas_total = 0;
+      if ( $swim_total == NULL )
+        $swim_total = 0;
+
+      return $this->renderFile( "@app/views/common/table.php", [
+        'items'      => $items,
+        'spas_total' => $spas_total,
+        'swim_total' => $swim_total,
+      ] );
     }
 
 
@@ -57,12 +70,12 @@
     function actionCreate() {
       $model = new TrailerLoad();
 
-      if ($model->load(Yii::$app->request->post()) && $model->save()) {
-        return $this->redirect(['create']);
+      if ( $model->load( Yii::$app->request->post() ) && $model->save() ) {
+        return $this->redirect( [ 'create' ] );
       } else {
-        return $this->render('create', [
+        return $this->render( 'create', [
           'model' => $model,
-        ]);
+        ] );
       }
     }
 
@@ -74,14 +87,14 @@
      */
     public
     function actionUpdate($id) {
-      $model = $this->findModel($id);
+      $model = $this->findModel( $id );
 
-      if ($model->load(Yii::$app->request->post()) && $model->save()) {
-        return $this->redirect(['site/index']);
+      if ( $model->load( Yii::$app->request->post() ) && $model->save() ) {
+        return $this->redirect( [ 'site/index' ] );
       } else {
-        return $this->render('update', [
+        return $this->render( 'update', [
           'model' => $model,
-        ]);
+        ] );
       }
     }
 
@@ -93,9 +106,9 @@
      */
     public
     function actionDelete($id) {
-      $this->findModel($id)->delete();
+      $this->findModel( $id )->delete();
 
-      return $this->redirect(['site/index']);
+      return $this->redirect( [ 'site/index' ] );
     }
 
     /**
@@ -107,10 +120,10 @@
      */
     protected
     function findModel($id) {
-      if (($model = TrailerLoad::findOne($id)) !== NULL) {
+      if ( ( $model = TrailerLoad::findOne( $id ) ) !== NULL ) {
         return $model;
       } else {
-        throw new NotFoundHttpException('The requested page does not exist.');
+        throw new NotFoundHttpException( 'The requested page does not exist.' );
       }
     }
   }
