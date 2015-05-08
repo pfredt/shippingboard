@@ -156,9 +156,18 @@
       <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\552d458a11ad0.data" afterPath="" />
       <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\552d4598871b8.data" afterPath="" />
       <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\552d459da32f0.data" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/LoadController.php" afterPath="$PROJECT_DIR$/controllers/LoadController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/SiteController.php" afterPath="$PROJECT_DIR$/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/logs/app.log" afterPath="$PROJECT_DIR$/runtime/logs/app.log" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d2d5fa78.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d375f2a8.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d415fa78.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d4b5f690.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d555f690.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d5f60248.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d6967f48.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d735f2a8.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d73ab950.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d7e1dfb0.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d881c458.data" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/debug/index.data" afterPath="$PROJECT_DIR$/runtime/debug/index.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -227,11 +236,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoadController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoadController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/LoadController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43252212" vertical-offset="204" max-vertical-offset="2006">
+            <state vertical-scroll-proportion="-15.038462" vertical-offset="204" max-vertical-offset="2006">
               <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33812153" vertical-offset="0" max-vertical-offset="905">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -270,6 +289,7 @@
         <option value="$PROJECT_DIR$/web/css/site.css" />
         <option value="$PROJECT_DIR$/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/controllers/LoadController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -496,6 +516,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spas.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trailer.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -630,13 +664,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/swim-spa/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="646">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/HotTubModels.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="935">
@@ -997,8 +1024,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/LoadController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43252212" vertical-offset="204" max-vertical-offset="2006">
+        <state vertical-scroll-proportion="-15.038462" vertical-offset="204" max-vertical-offset="2006">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33812153" vertical-offset="0" max-vertical-offset="905">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
