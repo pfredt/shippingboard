@@ -1,4 +1,4 @@
 So, do this two commands to update DB
 
-INSERT INTO `config` (`key`, `value`, `type`, `description`) VALUES ('last_spas', '1012', 'size', 'Last years total spas for this month  ');
-INSERT INTO `config` (`key`, `value`, `type`, `description`) VALUES ('last_swimspas', '112', 'size', 'Last years total swim spas for this month  ');
+INSERT INTO `config` (`key`, `value`, `type`, `description`) VALUES ('mtd_spas', '1012', 'size', 'MTD Spas');
+INSERT INTO `config` (`key`, `value`, `type`, `description`) VALUES ('mtd_swim_spas', '112', 'size', 'MTD Swim Spas');

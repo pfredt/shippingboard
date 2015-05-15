@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45f11937-34de-45aa-88e7-8921df17c05f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d921c840.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0d9c1c458.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0da61c458.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0db01cc28.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0db0809d0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0dbae62d0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0dc4e7270.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0dceec860.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0dd0df570.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0dd0f3d90.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0dd95fa78.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0de362958.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0ded5fe60.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0df7611e8.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e0162188.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e0b60248.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e15644b0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e1f619b8.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e295fa78.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e335f2a8.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e3d5f2a8.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e475fa78.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e515eec0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e5b5f2a8.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e655fa78.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e67955d8.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e67b9410.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e6f5fe60.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e73cebd0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e7401a90.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e775cb98.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e81dc690.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e8a76d90.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e8a94250.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e8bbe230.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e8bdb6f0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e91162b0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e9132fa0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e92133d0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e9d5fe60.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e9d8d4f0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0e9dac120.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0ea013ba0.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\Work\domains\trailer.local\runtime\debug\554d0eaaea150.data" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/LoadController.php" afterPath="$PROJECT_DIR$/controllers/LoadController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/SiteController.php" afterPath="$PROJECT_DIR$/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/config.php" afterPath="$PROJECT_DIR$/views/site/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/debug/index.data" afterPath="$PROJECT_DIR$/runtime/debug/index.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/index.php" afterPath="$PROJECT_DIR$/views/site/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/common/table.php" afterPath="$PROJECT_DIR$/views/common/table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -78,58 +30,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.884615" vertical-offset="439" max-vertical-offset="2380">
-              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="71" selection-end-column="39" />
-              <folding>
-                <element signature="e#39#61#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/LoadController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0" vertical-offset="459" max-vertical-offset="2295">
-              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-              <folding>
-                <element signature="e#39#47#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/common/table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.8461537" vertical-offset="2475" max-vertical-offset="3502">
-              <caret line="153" column="21" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.05483871" vertical-offset="0" max-vertical-offset="930">
-              <caret line="3" column="148" selection-start-line="3" selection-start-column="148" selection-end-line="3" selection-end-column="148" />
+            <state vertical-scroll-proportion="-1.1333333" vertical-offset="0" max-vertical-offset="153">
+              <caret line="2" column="78" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/common/table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5533109" vertical-offset="2091" max-vertical-offset="3502">
+              <caret line="152" column="141" selection-start-line="152" selection-start-column="141" selection-end-line="152" selection-end-column="141" />
               <folding />
             </state>
           </provider>
@@ -161,8 +79,8 @@
         <option value="$PROJECT_DIR$/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/controllers/LoadController.php" />
         <option value="$PROJECT_DIR$/views/site/config.php" />
-        <option value="$PROJECT_DIR$/views/common/table.php" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/views/common/table.php" />
       </list>
     </option>
   </component>
@@ -221,6 +139,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spas.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trailer.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spas.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trailer.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spas.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trailer.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spas.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trailer.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -276,7 +254,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -334,9 +312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="366" max-vertical-offset="1360">
           <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#27#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -386,9 +361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="366" max-vertical-offset="1360">
           <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#27#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -438,9 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="366" max-vertical-offset="1360">
           <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#27#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -490,9 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="366" max-vertical-offset="1360">
           <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#27#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,13 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="255">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/base/Widget.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.86504424" vertical-offset="0" max-vertical-offset="3553">
@@ -577,9 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.26923" vertical-offset="596" max-vertical-offset="1513">
           <caret line="63" column="140" selection-start-line="63" selection-start-column="140" selection-end-line="63" selection-end-column="140" />
-          <folding>
-            <element signature="e#6#27#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -594,7 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="608" max-vertical-offset="1751">
           <caret line="44" column="196" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="196" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,9 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="663">
           <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="e#30#38#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -612,7 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1479">
           <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,7 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48893806" vertical-offset="0" max-vertical-offset="904">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -628,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65818584" vertical-offset="391" max-vertical-offset="2244">
           <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="59" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="904">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33812153" vertical-offset="0" max-vertical-offset="905">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.78207964" vertical-offset="58" max-vertical-offset="1343">
           <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,16 +606,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32903227" vertical-offset="0" max-vertical-offset="930">
           <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/LoadController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0" vertical-offset="459" max-vertical-offset="2295">
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2295">
           <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
           <folding>
-            <element signature="e#39#47#0#PHP" expanded="true" />
+            <element signature="e#39#47#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -678,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28207964" vertical-offset="0" max-vertical-offset="904">
           <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="116" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,7 +631,7 @@
         <state vertical-scroll-proportion="-28.884615" vertical-offset="439" max-vertical-offset="2380">
           <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="71" selection-end-column="39" />
           <folding>
-            <element signature="e#39#61#0#PHP" expanded="true" />
+            <element signature="e#39#61#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -696,35 +640,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37057522" vertical-offset="39" max-vertical-offset="969">
           <caret line="22" column="179" selection-start-line="22" selection-start-column="179" selection-end-line="22" selection-end-column="179" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/common/table.php">
+    <entry file="file://$PROJECT_DIR$/config/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8461537" vertical-offset="2475" max-vertical-offset="3502">
-          <caret line="153" column="21" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.11283186" vertical-offset="0" max-vertical-offset="904">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05483871" vertical-offset="0" max-vertical-offset="930">
-          <caret line="3" column="148" selection-start-line="3" selection-start-column="148" selection-end-line="3" selection-end-column="148" />
+        <state vertical-scroll-proportion="-1.1333333" vertical-offset="0" max-vertical-offset="153">
+          <caret line="2" column="78" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/common/table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5533109" vertical-offset="2091" max-vertical-offset="3502">
+          <caret line="152" column="141" selection-start-line="152" selection-start-column="141" selection-end-line="152" selection-end-column="141" />
           <folding />
         </state>
       </provider>

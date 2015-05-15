@@ -150,7 +150,7 @@
   </table>
   <hr>
   <h4 class="text-center"><?= date( "F Y" ) ?></h4>
-  <h5 class="text-center">MTD Spas: <?= $spas_total ?> SwimSpas: <?= $swim_total ?></h5>
+  <h5 class="text-center">MTD Spas: <?= Yii::$app->params[ 'config' ][ 'mtd_spas' ] ?> SwimSpas: <?= Yii::$app->params[ 'config' ][ 'mtd_swim_spas' ] ?></h5>
   <table class="table text-center">
     <thead>
       <tr>
