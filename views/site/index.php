@@ -7,7 +7,7 @@
   /* @var $spas_total integer */
   /* @var $swim_total integer */
 
-  $this->title = 'Trailer Master';
+  $this->title = 'Shipping Board';
 
 ?>
 <div class="site-index">
