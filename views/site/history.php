@@ -9,7 +9,7 @@ use yii\helpers\Html,
 /* @var $name_swim_spas app\models\SwimSpasToTrailerLoads */
 /* @var $showCompleted boolean */
 
-$this->title = 'Trailer Master';
+$this->title = 'Shipping Board';
 
 ?>
 <div class="site-index">
