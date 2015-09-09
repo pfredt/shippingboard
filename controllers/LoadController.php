@@ -30,6 +30,7 @@
 
     /**
      * Return list of model in html.
+     *
      * @return mixed
      */
     public function actionGet() {
@@ -64,6 +65,7 @@
     /**
      * Creates a new TrailerLoad model.
      * If creation is successful, the browser will be redirected to main page.
+     *
      * @return mixed
      */
     public
@@ -82,11 +84,13 @@
     /**
      * Updates an existing TrailerLoad model.
      * If update is successful, the browser will be redirected to main page.
+     *
      * @param string $id
+     *
      * @return mixed
      */
     public
-    function actionUpdate($id) {
+    function actionUpdate( $id ) {
       $model = $this->findModel( $id );
 
       if ( $model->load( Yii::$app->request->post() ) && $model->save() ) {
@@ -101,11 +105,13 @@
     /**
      * Deletes an existing TrailerLoad model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
+     *
      * @param string $id
+     *
      * @return mixed
      */
     public
-    function actionDelete($id) {
+    function actionDelete( $id ) {
       $this->findModel( $id )->delete();
 
       return $this->redirect( [ 'site/index' ] );
@@ -114,12 +120,14 @@
     /**
      * Finds the TrailerLoad model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
+     *
      * @param string $id
+     *
      * @return TrailerLoad the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected
-    function findModel($id) {
+    function findModel( $id ) {
       if ( ( $model = TrailerLoad::findOne( $id ) ) !== NULL ) {
         return $model;
       } else {

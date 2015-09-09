@@ -17,6 +17,18 @@
   </div>
 </div>
 
+<div class="modal fade" id="show_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <script>
   <?php if($showCompleted) { ?>
   window.get = <?= $showCompleted ?>;

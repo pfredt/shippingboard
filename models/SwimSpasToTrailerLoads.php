@@ -10,6 +10,7 @@
    * @property string $index_number
    * @property string $trailer_load_id
    * @property string $swim_spa_model_id
+   * @property string $serial_number
    *
    * @property TrailerLoad $trailerLoad
    * @property SwimSpaModels $swimSpaModel
@@ -27,8 +28,9 @@
      */
     public function rules() {
       return [
-        [['trailer_load_id', 'swim_spa_model_id'], 'required'],
-        [['trailer_load_id', 'swim_spa_model_id'], 'integer']
+        [ [ 'trailer_load_id', 'swim_spa_model_id' ], 'required' ],
+        [ [ 'trailer_load_id', 'swim_spa_model_id' ], 'integer' ],
+        [ 'serial_number', 'string' ],
       ];
     }
 
@@ -47,13 +49,13 @@
      * @return \yii\db\ActiveQuery
      */
     public function getTrailerLoad() {
-      return $this->hasOne(TrailerLoad::className(), ['trailer_load_id' => 'trailer_load_id']);
+      return $this->hasOne( TrailerLoad::className(), [ 'trailer_load_id' => 'trailer_load_id' ] );
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
     public function getSwimSpaModel() {
-      return $this->hasOne(SwimSpaModels::className(), ['swim_spa_model_id' => 'swim_spa_model_id']);
+      return $this->hasOne( SwimSpaModels::className(), [ 'swim_spa_model_id' => 'swim_spa_model_id' ] );
     }
   }

@@ -19,6 +19,17 @@ $(document).ready(function () {
     setInterval("updateData()", 10 * 1000);
   }
 
+  var modal = $("#show_modal");
+
+  $("#lists-container").on('click', 'span.label', function () {
+    var t = $(this);
+    var string = t.data('info').split('**').join("<br />");
+
+
+    modal.find('.modal-body').html(string);
+    modal.modal();
+  });
+
   $("input.colorpicker").ColorPickerSliders({
     placement: 'right',
     hsvpanel: true,

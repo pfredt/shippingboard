@@ -28,7 +28,8 @@
     public function rules() {
       return [
         [['trailer_load_id', 'hot_tub_model_id'], 'required'],
-        [['trailer_load_id', 'hot_tub_model_id'], 'integer']
+        [ [ 'trailer_load_id', 'hot_tub_model_id' ], 'integer' ],
+        [ 'serial_number', 'string' ],
       ];
     }
 

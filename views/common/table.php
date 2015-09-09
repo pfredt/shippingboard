@@ -1,12 +1,12 @@
 <?php
   $days = [ ];
 
-  function writeColor($index) {
-    return " background-color: " . Yii::$app->params[ 'config' ][ 'day' . $index ] . " ";
+  function writeColor( $index ) {
+    return " background-color: " . Yii::$app->params['config']['day' . $index] . " ";
   }
 
   function writeHeading() {
-    return " color: " . Yii::$app->params[ 'config' ][ 'heading' ] . "; font-weight: " . Yii::$app->params[ 'config' ][ 'heading-weight' ] . ";";
+    return " color: " . Yii::$app->params['config']['heading'] . "; font-weight: " . Yii::$app->params['config']['heading-weight'] . ";";
   }
 
 ?>
@@ -15,17 +15,21 @@
   .heading-style {
   <?= writeHeading(); ?>
   }
+
   <?php for($i = 1; $i < 10; $i++) { ?>
   .<?= "day".$i ?> td {
   <?= writeColor($i); ?>
   }
+
   <?php } ?>
-  .main-table > tbody > tr > td { border-color: <?= Yii::$app->params['config']['border-color'] ?>; }
+  .main-table > tbody > tr > td {
+    border-color: <?= Yii::$app->params['config']['border-color'] ?>;
+  }
 </style>
 
 <div class="col-lg-10">
   <div
-    style="position: absolute; right: -15px; height: 100%; width: 30px; background: <?= Yii::$app->params[ 'config' ][ 'line-color' ]; ?>"></div>
+    style="position: absolute; right: -15px; height: 100%; width: 30px; background: <?= Yii::$app->params['config']['line-color']; ?>"></div>
   <table class="table main-table text-center">
     <thead>
       <tr>
@@ -48,8 +52,8 @@
         $step = 60 * 60 * 24 - 1;
         for ( $i = 1; $i <= 9; $i++ ) {
           if ( $item->shipping_date >= $start && $item->shipping_date <= $start + $step ) {
-            $days[ $i ][ 0 ] += $item->number_of_spas;
-            $days[ $i ][ 1 ] += $item->number_of_swimspas;
+            $days[$i][0] += $item->number_of_spas;
+            $days[$i][1] += $item->number_of_swimspas;
 
             break;
           }
@@ -71,7 +75,7 @@
           <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->shipper; ?></td>
           <td style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->trailer_type; ?></td>
           <td
-            style="border-top-width: <?= $item->thinkness ?>px;"><?= Yii::$app->params[ 'status' ][ $item->status ]; ?></td>
+            style="border-top-width: <?= $item->thinkness ?>px;"><?= Yii::$app->params['status'][$item->status]; ?></td>
           <td
             style="border-top-width: <?= $item->thinkness ?>px;"><?= $item->completed ? "<i class='glyphicon glyphicon-ok'></i>" : ""; ?></td>
         </tr>
@@ -80,29 +84,37 @@
             &nbsp;
             <?php
 
+              $all = "";
+
               $list_one = [ ];
               $names_spas = $item->getHotTubsToTrailerLoads();
               if ( $names_spas ) foreach ( $names_spas as $name_spas ) {
-                $list_one[ $name_spas->getHotTubModel()->one()->hot_tub_model_id ][ 'name' ] = $name_spas->getHotTubModel()->one()->hot_tub_model_name;
-                $list_one[ $name_spas->getHotTubModel()->one()->hot_tub_model_id ][ 'count' ]++;
+                $list_one[$name_spas->getHotTubModel()->one()->hot_tub_model_id]['name'] = $name_spas->getHotTubModel()->one()->hot_tub_model_name;
+                $list_one[$name_spas->getHotTubModel()->one()->hot_tub_model_id]['count']++;
+                $list_one[$name_spas->getHotTubModel()->one()->hot_tub_model_id]['serial_number'] = str_replace( "\r\n", "**", $name_spas->serial_number );
+                $all .= str_replace( "\r\n", "**", $name_spas->serial_number ) . "**";
                 //echo "<span class=\"label label-info\">" . $name_spas->getHotTubModel()->one()->hot_tub_model_name . "</span>&nbsp;";
               }
 
               if ( $list_one ) foreach ( $list_one as $vals ) {
-                echo "<span class=\"label\" style=\"background: transparent; border: 2px solid " . Yii::$app->params[ 'config' ][ 'spas-border-color' ] . "; color: " . Yii::$app->params[ 'config' ][ 'spas-color' ] . "\">" . $vals[ 'name' ] . "&nbsp;&nbsp;&nbsp;(" . $vals[ 'count' ] . ")</span>&nbsp;";
+                echo "<span class=\"label\" data-info=\"" . $vals['serial_number'] . "\" style=\"background: transparent; border: 2px solid " . Yii::$app->params['config']['spas-border-color'] . "; color: " . Yii::$app->params['config']['spas-color'] . "\">" . $vals['name'] . "&nbsp;&nbsp;&nbsp;(" . $vals['count'] . ")</span>&nbsp;";
               }
 
               $list_two = [ ];
               $names_swim_spas = $item->getSwimSpasToTrailerLoads();
               if ( $names_swim_spas ) foreach ( $names_swim_spas as $name_swim_spas ) {
-                $list_two[ $name_swim_spas->getSwimSpaModel()->one()->swim_spa_model_id ][ 'name' ] = $name_swim_spas->getSwimSpaModel()->one()->swim_spa_model_name;
-                $list_two[ $name_swim_spas->getSwimSpaModel()->one()->swim_spa_model_id ][ 'count' ]++;
+                $list_two[$name_swim_spas->getSwimSpaModel()->one()->swim_spa_model_id]['name'] = $name_swim_spas->getSwimSpaModel()->one()->swim_spa_model_name;
+                $list_two[$name_swim_spas->getSwimSpaModel()->one()->swim_spa_model_id]['count']++;
+                $list_two[$name_swim_spas->getSwimSpaModel()->one()->swim_spa_model_id]['serial_number'] = str_replace( "\r\n", "**", $name_swim_spas->serial_number );
+                $all .= str_replace( "\r\n", "**", $name_swim_spas->serial_number ) . "**";
                 //echo "<span class=\"label label-success\">" . $name_swim_spas->getSwimSpaModel()->one()->swim_spa_model_name . "</span>&nbsp;";
               }
 
               if ( $list_two ) foreach ( $list_two as $vals ) {
-                echo "<span class=\"label label-success\" style=\"background: transparent; border: 2px solid " . Yii::$app->params[ 'config' ][ 'swim-spas-border-color' ] . "; color: " . Yii::$app->params[ 'config' ][ 'swim-spas-color' ] . "\">" . $vals[ 'name' ] . "&nbsp;&nbsp;&nbsp;(" . $vals[ 'count' ] . ")</span>&nbsp;";
+                echo "<span class=\"label label-success\" data-info=\"" . $vals['serial_number'] . "\" style=\"background: transparent; border: 2px solid " . Yii::$app->params['config']['swim-spas-border-color'] . "; color: " . Yii::$app->params['config']['swim-spas-color'] . "\">" . $vals['name'] . "&nbsp;&nbsp;&nbsp;(" . $vals['count'] . ")</span>&nbsp;";
               }
+
+              echo "<span class=\"label label-success\" data-info=\"" . $all . "\" style=\"background: transparent; border: 2px solid " . Yii::$app->params['config']['swim-spas-border-color'] . "; color: " . Yii::$app->params['config']['swim-spas-color'] . "\">All Numbers</span>&nbsp;";
 
             ?>
           </td>
@@ -129,14 +141,14 @@
     <?php $sum = [ 0, 0 ];
       $start = mktime( 0, 0, 0 );
       for ( $i = 1; $i <= 9; $i++ ) {
-        $sum[ 0 ] += $days[ $i ][ 0 ];
-        $sum[ 1 ] += $days[ $i ][ 1 ];
+        $sum[0] += $days[$i][0];
+        $sum[1] += $days[$i][1];
         $day = date( "N", $start );
         ?>
         <tr class="day<?= $day ?>">
           <td><?= date( "l", $start ); ?></td>
-          <td><?= $days[ $i ][ 0 ] ?></td>
-          <td><?= $days[ $i ][ 1 ] ?></td>
+          <td><?= $days[$i][0] ?></td>
+          <td><?= $days[$i][1] ?></td>
         </tr>
         <?php
         $start += 24 * 60 * 60;
@@ -144,13 +156,13 @@
     ?>
     <tr>
       <td><strong>Total:</strong></td>
-      <td><?= $sum[ 0 ] ?></td>
-      <td><?= $sum[ 1 ] ?></td>
+      <td><?= $sum[0] ?></td>
+      <td><?= $sum[1] ?></td>
     </tr>
   </table>
   <hr>
   <h4 class="text-center"><?= date( "F Y" ) ?></h4>
-  <h5 class="text-center">MTD Spas: <?= Yii::$app->params[ 'config' ][ 'mtd_spas' ] ?> SwimSpas: <?= Yii::$app->params[ 'config' ][ 'mtd_swim_spas' ] ?></h5>
+  <h5 class="text-center">MTD Spas: <?= Yii::$app->params['config']['mtd_spas'] ?> SwimSpas: <?= Yii::$app->params['config']['mtd_swim_spas'] ?></h5>
   <table class="table text-center">
     <thead>
       <tr>
@@ -162,38 +174,38 @@
     <tbody>
       <tr>
         <td>0.00%</td>
-        <td><?= Yii::$app->params[ 'config' ][ 'last_spas' ] ?></td>
-        <td><?= Yii::$app->params[ 'config' ][ 'last_swimspas' ] ?></td>
+        <td><?= Yii::$app->params['config']['last_spas'] ?></td>
+        <td><?= Yii::$app->params['config']['last_swimspas'] ?></td>
       </tr>
       <tr>
         <td>5.00%</td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_spas' ] * 1.05) ?></td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_swimspas' ] * 1.05) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_spas'] * 1.05 ) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_swimspas'] * 1.05 ) ?></td>
       </tr>
       <tr>
         <td>10.00%</td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_spas' ] * 1.1) ?></td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_swimspas' ] * 1.1) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_spas'] * 1.1 ) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_swimspas'] * 1.1 ) ?></td>
       </tr>
       <tr>
         <td>20.00%</td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_spas' ] * 1.2) ?></td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_swimspas' ] * 1.2) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_spas'] * 1.2 ) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_swimspas'] * 1.2 ) ?></td>
       </tr>
       <tr>
         <td>30.00%</td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_spas' ] * 1.3) ?></td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_swimspas' ] * 1.3) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_spas'] * 1.3 ) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_swimspas'] * 1.3 ) ?></td>
       </tr>
       <tr>
         <td>40.00%</td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_spas' ] * 1.4) ?></td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_swimspas' ] * 1.4) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_spas'] * 1.4 ) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_swimspas'] * 1.4 ) ?></td>
       </tr>
       <tr>
         <td>50.00%</td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_spas' ] * 1.5) ?></td>
-        <td><?= floor(Yii::$app->params[ 'config' ][ 'last_swimspas' ] * 1.5) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_spas'] * 1.5 ) ?></td>
+        <td><?= floor( Yii::$app->params['config']['last_swimspas'] * 1.5 ) ?></td>
       </tr>
     </tbody>
   </table>
