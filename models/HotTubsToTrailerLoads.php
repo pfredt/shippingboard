@@ -39,7 +39,7 @@
     public function attributeLabels() {
       return [
         'index_number'     => 'Index Number',
-        'trailer_load_id'  => 'Trailer Load ID',
+        'trailer_load_id' => 'Shipment ID',
         'hot_tub_model_id' => 'Hot Tub Model ID',
       ];
     }

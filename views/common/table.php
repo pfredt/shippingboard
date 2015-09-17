@@ -39,7 +39,7 @@
         <th class="text-center heading-style">Spas</th>
         <th class="text-center heading-style">Swim Spas</th>
         <th class="text-center heading-style">Shipper</th>
-        <th class="text-center heading-style">Trailer type</th>
+        <th class="text-center heading-style">Shipment type</th>
         <th class="text-center heading-style">Status</th>
         <th class="text-center heading-style">Completed Y/N</th>
       </tr>

@@ -121,6 +121,7 @@
                     <h4 class="panel-title">
                       <a role="button" data-toggle="collapse" href="#collapse_spas_<?= $spa->swim_spa_model_id ?>" aria-expanded="true"
                          aria-controls="collapseOne">
+                        Swim
                         Spas: <?= $spa->swim_spa_model_name . ( $model->swim_spas_model[$spa->swim_spa_model_id] ? " <strong>(" . $model->swim_spas_model[$spa->swim_spa_model_id] . ")</strong>" : "" ) ?>
                       </a>
                     </h4>

@@ -103,14 +103,14 @@
      */
     public function attributeLabels() {
       return [
-        'trailer_load_id'    => 'Trailer Load ID',
+        'trailer_load_id' => 'Shipment ID',
         'completed'          => 'Completed',
         'processed'          => 'Processed',
         'dealer'             => 'Dealer',
         'number_of_spas'     => 'Number Of Spas',
         'number_of_swimspas' => 'Number Of Swimspas',
         'shipper'            => 'Shipper',
-        'trailer_type'       => 'Trailer Type',
+        'trailer_type'    => 'Shipment Type',
         'status'             => 'Status',
         'spas_model'         => 'Spas',
         'swim_spas_model'    => 'Swim Spas',
