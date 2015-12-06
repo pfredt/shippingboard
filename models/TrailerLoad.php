@@ -2,22 +2,23 @@
 
   namespace app\models;
 
+  use Swift_Plugins_Loggers_ArrayLogger;
   use Yii;
 
   /**
    * This is the model class for table "trailer_load".
    *
-   * @property string       $trailer_load_id
-   * @property string       $shipping_date
-   * @property integer $completed
-   * @property string       $dealer
-   * @property integer $number_of_spas
-   * @property integer $number_of_swimspas
-   * @property string       $shipper
-   * @property string       $trailer_type
-   * @property string       $status
+   * @property string                   $trailer_load_id
+   * @property string                   $shipping_date
+   * @property integer                  $completed
+   * @property string                   $dealer
+   * @property integer                  $number_of_spas
+   * @property integer                  $number_of_swimspas
+   * @property string                   $shipper
+   * @property string                   $trailer_type
+   * @property string                   $status
    *
-   * @property HotTubsToTrailerLoads[] $hotTubsToTrailerLoads
+   * @property HotTubsToTrailerLoads[]  $hotTubsToTrailerLoads
    * @property SwimSpasToTrailerLoads[] $swimSpasToTrailerLoads
    */
   class TrailerLoad extends \yii\db\ActiveRecord {
@@ -103,14 +104,14 @@
      */
     public function attributeLabels() {
       return [
-        'trailer_load_id' => 'Shipment ID',
+        'trailer_load_id'    => 'Shipment ID',
         'completed'          => 'Completed',
         'processed'          => 'Processed',
         'dealer'             => 'Dealer',
         'number_of_spas'     => 'Number Of Spas',
         'number_of_swimspas' => 'Number Of Swimspas',
         'shipper'            => 'Shipper',
-        'trailer_type'    => 'Shipment Type',
+        'trailer_type'       => 'Shipment Type',
         'status'             => 'Status',
         'spas_model'         => 'Spas',
         'swim_spas_model'    => 'Swim Spas',
@@ -121,6 +122,8 @@
      * @return \yii\db\ActiveQuery
      */
     public function getHotTubsToTrailerLoads() {
+      $t = new Swift_Plugins_Loggers_ArrayLogger();
+
       return $this->hasMany( HotTubsToTrailerLoads::className(), [ 'trailer_load_id' => 'trailer_load_id' ] )->all();
     }
 

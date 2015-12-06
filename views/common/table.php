@@ -45,9 +45,7 @@
       </tr>
     </thead>
     <tbody>
-      <?php if ( $items ) foreach ( $items as $key => $item ) { ?>
-
-        <?php
+      <?php if ( $items ) foreach ( $items as $key => $item ) {
         $start = mktime( 0, 0, 0 );
         $step = 60 * 60 * 24 - 1;
         for ( $i = 1; $i <= 9; $i++ ) {

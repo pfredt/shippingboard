@@ -19254,3 +19254,360 @@ Stack trace:
     ]
     'argc' => 3
 ]
+2015-12-01 22:21:49 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trailer.hot_tubs_to_trailer_loads' doesn't exist' in /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/db/Command.php:822
+Stack trace:
+#0 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/db/Command.php(822): PDOStatement->execute()
+#1 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/db/Query.php(206): yii\db\Command->queryAll()
+#3 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/db/ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 /Users/avg206/Work/Projects/trailer.local/models/TrailerLoad.php(126): yii\db\ActiveQuery->all()
+#5 /Users/avg206/Work/Projects/trailer.local/views/common/table.php(90): app\models\TrailerLoad->getHotTubsToTrailerLoads()
+#6 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(325): require('/Users/avg206/W...')
+#7 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/avg206/W...', Array)
+#8 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/avg206/W...', Array, NULL)
+#9 /Users/avg206/Work/Projects/trailer.local/views/site/index.php(16): yii\base\View->render('//common/table', Array)
+#10 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(325): require('/Users/avg206/W...')
+#11 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/avg206/W...', Array)
+#12 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/avg206/W...', Array, Object(app\controllers\SiteController))
+#13 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#14 /Users/avg206/Work/Projects/trailer.local/controllers/SiteController.php(73): yii\base\Controller->render('index', Array)
+#15 [internal function]: app\controllers\SiteController->actionIndex(0)
+#16 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#19 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/index', Array)
+#20 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/avg206/Work/Projects/trailer.local/web/index.php(14): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trailer.hot_tubs_to_trailer_loads' doesn't exist
+The SQL being executed was: SELECT * FROM `hot_tubs_to_trailer_loads` WHERE `trailer_load_id`=12' in /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/db/Schema.php:534
+Stack trace:
+#0 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/db/Command.php(837): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/db/Query.php(206): yii\db\Command->queryAll()
+#3 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/db/ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 /Users/avg206/Work/Projects/trailer.local/models/TrailerLoad.php(126): yii\db\ActiveQuery->all()
+#5 /Users/avg206/Work/Projects/trailer.local/views/common/table.php(90): app\models\TrailerLoad->getHotTubsToTrailerLoads()
+#6 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(325): require('/Users/avg206/W...')
+#7 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/avg206/W...', Array)
+#8 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/avg206/W...', Array, NULL)
+#9 /Users/avg206/Work/Projects/trailer.local/views/site/index.php(16): yii\base\View->render('//common/table', Array)
+#10 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(325): require('/Users/avg206/W...')
+#11 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/avg206/W...', Array)
+#12 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/avg206/W...', Array, Object(app\controllers\SiteController))
+#13 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#14 /Users/avg206/Work/Projects/trailer.local/controllers/SiteController.php(73): yii\base\Controller->render('index', Array)
+#15 [internal function]: app\controllers\SiteController->actionIndex(0)
+#16 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#19 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/index', Array)
+#20 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/avg206/Work/Projects/trailer.local/web/index.php(14): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'trailer.hot_tubs_to_trailer_loads' doesn't exist
+)
+
+2015-12-01 22:21:49 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'trailer.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/avg206/Work/Projects/trailer.local/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/avg206/Work/Projects/trailer.local/web/index.php'
+    'REMOTE_PORT' => '57743'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1448997709.52
+    'REQUEST_TIME' => 1448997709
+    'argv' => []
+    'argc' => 0
+]
+2015-12-06 12:05:50 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: date' in /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('get-days', Array)
+#3 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/get-days', Array)
+#4 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Users/avg206/Work/Projects/trailer.local/web/index.php(14): yii\base\Application->run()
+#6 {main}
+2015-12-06 12:05:50 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46ef9a212c5a4f28d0b540c7d360363a0a0780da985f8cef81236cf8c3ad3fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6NASUcezDmaUO6oj7_R94QuAFHpCv62T\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'trailer.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d46ef9a212c5a4f28d0b540c7d360363a0a0780da985f8cef81236cf8c3ad3fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226NASUcezDmaUO6oj7_R94QuAFHpCv62T%22%3B%7D'
+    'PATH' => '/bin:/sbin:/usr/bin:/usr/sbin:/usr/libexec:/System/Library/CoreServices'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/avg206/Work/Projects/trailer.local/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/avg206/Work/Projects/trailer.local/web/index.php'
+    'REMOTE_PORT' => '51953'
+    'REDIRECT_URL' => '/api/get-days'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/get-days'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/get-days'
+    'PATH_TRANSLATED' => 'redirect:/index.php/api/get-days/get-days'
+    'PHP_SELF' => '/index.php/api/get-days'
+    'REQUEST_TIME_FLOAT' => 1449392750.73
+    'REQUEST_TIME' => 1449392750
+    'argv' => []
+    'argc' => 0
+]
+2015-12-06 12:41:41 [::1][-][-][warning][yii\web\JsonResponseFormatter::formatJsonp] The 'jsonp' response requires that the data be an array consisting of both 'data' and 'callback' elements.
+2015-12-06 12:41:41 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46ef9a212c5a4f28d0b540c7d360363a0a0780da985f8cef81236cf8c3ad3fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6NASUcezDmaUO6oj7_R94QuAFHpCv62T\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'trailer.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d46ef9a212c5a4f28d0b540c7d360363a0a0780da985f8cef81236cf8c3ad3fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226NASUcezDmaUO6oj7_R94QuAFHpCv62T%22%3B%7D'
+    'PATH' => '/bin:/sbin:/usr/bin:/usr/sbin:/usr/libexec:/System/Library/CoreServices'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/avg206/Work/Projects/trailer.local/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/avg206/Work/Projects/trailer.local/web/index.php'
+    'REMOTE_PORT' => '52203'
+    'REDIRECT_URL' => '/api/get-days'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/get-days'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/get-days'
+    'PATH_TRANSLATED' => 'redirect:/index.php/api/get-days/get-days'
+    'PHP_SELF' => '/index.php/api/get-days'
+    'REQUEST_TIME_FLOAT' => 1449394901.09
+    'REQUEST_TIME' => 1449394901
+    'argv' => []
+    'argc' => 0
+]
+2015-12-06 12:41:44 [::1][-][-][warning][yii\web\JsonResponseFormatter::formatJsonp] The 'jsonp' response requires that the data be an array consisting of both 'data' and 'callback' elements.
+2015-12-06 12:41:44 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46ef9a212c5a4f28d0b540c7d360363a0a0780da985f8cef81236cf8c3ad3fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6NASUcezDmaUO6oj7_R94QuAFHpCv62T\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'trailer.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d46ef9a212c5a4f28d0b540c7d360363a0a0780da985f8cef81236cf8c3ad3fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226NASUcezDmaUO6oj7_R94QuAFHpCv62T%22%3B%7D'
+    'PATH' => '/bin:/sbin:/usr/bin:/usr/sbin:/usr/libexec:/System/Library/CoreServices'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/avg206/Work/Projects/trailer.local/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/avg206/Work/Projects/trailer.local/web/index.php'
+    'REMOTE_PORT' => '52203'
+    'REDIRECT_URL' => '/api/get-days'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/get-days'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/get-days'
+    'PATH_TRANSLATED' => 'redirect:/index.php/api/get-days/get-days'
+    'PHP_SELF' => '/index.php/api/get-days'
+    'REQUEST_TIME_FLOAT' => 1449394904.56
+    'REQUEST_TIME' => 1449394904
+    'argv' => []
+    'argc' => 0
+]
+2015-12-06 12:42:09 [::1][-][-][warning][yii\web\JsonResponseFormatter::formatJsonp] The 'jsonp' response requires that the data be an array consisting of both 'data' and 'callback' elements.
+2015-12-06 12:42:09 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46ef9a212c5a4f28d0b540c7d360363a0a0780da985f8cef81236cf8c3ad3fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6NASUcezDmaUO6oj7_R94QuAFHpCv62T\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'trailer.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d46ef9a212c5a4f28d0b540c7d360363a0a0780da985f8cef81236cf8c3ad3fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226NASUcezDmaUO6oj7_R94QuAFHpCv62T%22%3B%7D'
+    'PATH' => '/bin:/sbin:/usr/bin:/usr/sbin:/usr/libexec:/System/Library/CoreServices'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/avg206/Work/Projects/trailer.local/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/avg206/Work/Projects/trailer.local/web/index.php'
+    'REMOTE_PORT' => '52204'
+    'REDIRECT_URL' => '/api/get-days'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/get-days'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/get-days'
+    'PATH_TRANSLATED' => 'redirect:/index.php/api/get-days/get-days'
+    'PHP_SELF' => '/index.php/api/get-days'
+    'REQUEST_TIME_FLOAT' => 1449394929.34
+    'REQUEST_TIME' => 1449394929
+    'argv' => []
+    'argc' => 0
+]
+2015-12-06 12:42:12 [::1][-][-][warning][yii\web\JsonResponseFormatter::formatJsonp] The 'jsonp' response requires that the data be an array consisting of both 'data' and 'callback' elements.
+2015-12-06 12:42:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd46ef9a212c5a4f28d0b540c7d360363a0a0780da985f8cef81236cf8c3ad3fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6NASUcezDmaUO6oj7_R94QuAFHpCv62T\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'trailer.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d46ef9a212c5a4f28d0b540c7d360363a0a0780da985f8cef81236cf8c3ad3fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226NASUcezDmaUO6oj7_R94QuAFHpCv62T%22%3B%7D'
+    'PATH' => '/bin:/sbin:/usr/bin:/usr/sbin:/usr/libexec:/System/Library/CoreServices'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/avg206/Work/Projects/trailer.local/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/avg206/Work/Projects/trailer.local/web/index.php'
+    'REMOTE_PORT' => '52204'
+    'REDIRECT_URL' => '/api/get-days'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/get-days'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/get-days'
+    'PATH_TRANSLATED' => 'redirect:/index.php/api/get-days/get-days'
+    'PHP_SELF' => '/index.php/api/get-days'
+    'REQUEST_TIME_FLOAT' => 1449394931.98
+    'REQUEST_TIME' => 1449394931
+    'argv' => []
+    'argc' => 0
+]
+2015-12-06 15:20:35 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: api/get-data' in /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('get-data', Array)
+#1 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/get-data', Array)
+#2 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Users/avg206/Work/Projects/trailer.local/web/index.php(14): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/avg206/Work/Projects/trailer.local/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/avg206/Work/Projects/trailer.local/web/index.php(14): yii\base\Application->run()
+#2 {main}
+2015-12-06 15:20:35 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'trailer.local'
+    'PATH' => '/bin:/sbin:/usr/bin:/usr/sbin:/usr/libexec:/System/Library/CoreServices'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'trailer.local'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/avg206/Work/Projects/trailer.local/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/avg206/Work/Projects/trailer.local/web/index.php'
+    'REMOTE_PORT' => '53096'
+    'REDIRECT_URL' => '/api/get-data'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/get-data'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/get-data'
+    'PATH_TRANSLATED' => 'redirect:/index.php/api/get-data/get-data'
+    'PHP_SELF' => '/index.php/api/get-data'
+    'REQUEST_TIME_FLOAT' => 1449404435.72
+    'REQUEST_TIME' => 1449404435
+    'argv' => []
+    'argc' => 0
+]
