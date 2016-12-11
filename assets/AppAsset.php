@@ -23,7 +23,7 @@
       'css/site.css',
     ];
     public $js = [
-      'http://cdnjs.cloudflare.com/ajax/libs/tinycolor/0.11.1/tinycolor.min.js',
+      '//cdnjs.cloudflare.com/ajax/libs/tinycolor/0.11.1/tinycolor.min.js',
       'js/bootstrap-datepicker.js',
       'js/bootstrap.colorpickersliders.js',
       'js/jquery.stepper.js',

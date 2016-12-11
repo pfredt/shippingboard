@@ -24,10 +24,10 @@ $(document).ready(function () {
   $("#lists-container").on('click', 'span.label', function () {
     var t = $(this);
     var string = t.data('info').split('**').join("<br />");
-
-
     modal.find('.modal-body').html(string);
-    modal.modal();
+    if (modal.find('.modal-body').html() !== ""){
+      modal.modal();
+    }
   });
 
   $("input.colorpicker").ColorPickerSliders({

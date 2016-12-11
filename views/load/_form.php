@@ -119,14 +119,14 @@
                 <div class="panel panel-default">
                   <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
-                      <a role="button" data-toggle="collapse" href="#collapse_spas_<?= $spa->swim_spa_model_id ?>" aria-expanded="true"
+                      <a role="button" data-toggle="collapse" href="#collapse_swim_spas_<?= $spa->swim_spa_model_id ?>" aria-expanded="true"
                          aria-controls="collapseOne">
                         Swim
                         Spas: <?= $spa->swim_spa_model_name . ( $model->swim_spas_model[$spa->swim_spa_model_id] ? " <strong>(" . $model->swim_spas_model[$spa->swim_spa_model_id] . ")</strong>" : "" ) ?>
                       </a>
                     </h4>
                   </div>
-                  <div id="collapse_spas_<?= $spa->swim_spa_model_id ?>" class="panel-collapse collapse" role="tabpanel">
+                  <div id="collapse_swim_spas_<?= $spa->swim_spa_model_id ?>" class="panel-collapse collapse" role="tabpanel">
                     <div class="panel-body">
                       <div class="raw" style="overflow: hidden;">
                         <div class="col-xs-4">
