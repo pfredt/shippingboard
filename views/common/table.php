@@ -95,7 +95,9 @@
               }
 
               if ( $list_one ) foreach ( $list_one as $vals ) {
-                echo "<span class=\"label\" data-info=\"" . $vals['serial_number'] . "\" style=\"background: transparent; border: 2px solid " . Yii::$app->params['config']['spas-border-color'] . "; color: " . Yii::$app->params['config']['spas-color'] . "\">" . $vals['name'] . "&nbsp;&nbsp;&nbsp;(" . $vals['count'] . ")</span>&nbsp;";
+                echo "<span class=\"label\" data-info=\"" . $vals['serial_number'] . "\" style=\"background: transparent; border: 2px solid " . Yii::$app->params['config']['spas-border-color'] . "; color: " . Yii::$app->params['config']['spas-color'] . "\">"
+                        . ((isset($vals['serial_number']) && $vals['serial_number'] !== "") ? "<b style='font-size:2.5em; position: relative; top: 13px;'>"."*&nbsp;"."</b>" : "")
+                        . $vals['name'] . "&nbsp;&nbsp;&nbsp;(" . $vals['count'] . ")</span>&nbsp;";
               }
 
               $list_two = [ ];
