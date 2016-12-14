@@ -109,10 +109,13 @@
               }
 
               if ( $list_two ) foreach ( $list_two as $vals ) {
-                echo "<span class=\"label label-success\" data-info=\"" . $vals['serial_number'] . "\" style=\"background: transparent; border: 2px solid " . Yii::$app->params['config']['swim-spas-border-color'] . "; color: " . Yii::$app->params['config']['swim-spas-color'] . "\">" . $vals['name'] . "&nbsp;&nbsp;&nbsp;(" . $vals['count'] . ")</span>&nbsp;";
+                echo "<span class=\"label label-success\" data-info=\"" . $vals['serial_number'] . "\" style=\"background: transparent; border: 2px solid " . Yii::$app->params['config']['swim-spas-border-color'] . "; color: " . Yii::$app->params['config']['swim-spas-color'] . "\">" .
+                        ((isset($vals['serial_number']) && $vals['serial_number'] !== "") ? "<b style='font-size:2.5em; position: relative; top: 13px;'>"."*&nbsp;"."</b>" : "")
+                        . $vals['name'] . "&nbsp;&nbsp;&nbsp;(" . $vals['count'] . ")</span>&nbsp;";
               }
 
-              echo "<span class=\"label label-success\" data-info=\"" . $all . "\" style=\"background: transparent; border: 2px solid " . Yii::$app->params['config']['swim-spas-border-color'] . "; color: " . Yii::$app->params['config']['swim-spas-color'] . "\">All Numbers</span>&nbsp;";
+              //Requested to be removed
+              //echo "<span class=\"label label-success\" data-info=\"" . $all . "\" style=\"background: transparent; border: 2px solid " . Yii::$app->params['config']['swim-spas-border-color'] . "; color: " . Yii::$app->params['config']['swim-spas-color'] . "\">All Numbers</span>&nbsp;";
 
             ?>
           </td>
